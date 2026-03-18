@@ -1,0 +1,377 @@
+/*
+ * animations.css — Effects that Tailwind cannot express
+ *
+ * Contains: @property definitions, @keyframes, JS-driven CSS custom
+ * property effects (mouse-follow radial gradients, conic-border rotations),
+ * -webkit-mask-image overlays, and pseudo-element based animations.
+ *
+ * Sources: index.css, shared.css, explore.css, issuances.css (deduplicated).
+ */
+
+/* ==========================================================================
+   @property definitions (required for CSS Houdini animated custom properties)
+   ========================================================================== */
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@property --stat-angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+/* ==========================================================================
+   @keyframes — all animations, deduplicated (index.css wins on conflicts)
+   ========================================================================== */
+
+/* --- Mesh float (index.css versions) --- */
+
+@keyframes meshFloat1 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    25% { transform: translate(-60px, 40px) scale(1.08); }
+    50% { transform: translate(40px, -30px) scale(0.96); }
+    75% { transform: translate(-30px, -50px) scale(1.04); }
+}
+
+@keyframes meshFloat2 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(50px, -40px) scale(1.06); }
+    66% { transform: translate(-40px, 30px) scale(0.94); }
+}
+
+@keyframes meshFloat3 {
+    0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+    50% { transform: translate(60px, -60px) scale(1.12) rotate(180deg); }
+}
+
+/* --- Hero entrance --- */
+
+@keyframes heroBadgeIn {
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes heroContentIn {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes heroStatIn {
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* --- Shimmer / gradient text --- */
+
+@keyframes shimmerText {
+    0%, 100% { background-position: 100% 50%; }
+    50% { background-position: 0% 50%; }
+}
+
+@keyframes shimmer {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+/* --- Border rotation (conic-gradient driven) --- */
+
+@keyframes statBorderRotate {
+    to { --stat-angle: 360deg; }
+}
+
+@keyframes borderRotate {
+    to { --angle: 360deg; }
+}
+
+/* --- Marquee / scanline / orb --- */
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes marqueeReverse {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes scanline {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(200%); }
+}
+
+@keyframes orbFloat {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(30px, -20px) scale(1.05); }
+    66% { transform: translate(-20px, 20px) scale(0.95); }
+}
+
+/* --- Shared (from shared.css) --- */
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+/* --- Explore page (from explore.css) --- */
+
+@keyframes livePulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.4); }
+    50% { opacity: 0.7; box-shadow: 0 0 0 4px rgba(52, 211, 153, 0); }
+}
+
+@keyframes chartSpin {
+    to { transform: rotate(360deg); }
+}
+
+/* ==========================================================================
+   Mouse-follow radial-gradient effects (JS sets --hero-mx/my, --mouse-x/y,
+   --feat-mx/my, --eco-mx/my, --mx/my via mousemove listeners)
+   ========================================================================== */
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle 350px at var(--hero-mx, 50%) var(--hero-my, 50%), rgba(232,100,44,0.08), transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.hero:hover::after {
+    opacity: 1;
+}
+
+.product-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(232,100,44,0.06), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.product-card:hover::before { opacity: 1; }
+
+.feature-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at var(--feat-mx, 50%) var(--feat-my, 50%), rgba(232,100,44,0.06), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.feature-item:hover::before { opacity: 1; }
+
+.eco-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-xl);
+    background: radial-gradient(circle at var(--eco-mx, 50%) var(--eco-my, 50%), rgba(232,100,44,0.08), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+.eco-card:hover::after { opacity: 1; }
+
+.marquee-logo-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-lg);
+    background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(232,100,44,0.15), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+.marquee-logo-card:hover::before { opacity: 1; }
+
+/* ==========================================================================
+   Conic-border rotation effects (@property --angle / --stat-angle driven)
+   ========================================================================== */
+
+.hero-stat-card::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: var(--radius-lg);
+    background: conic-gradient(from var(--stat-angle, 0deg), transparent 60%, rgba(232,100,44,0.4) 80%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+.hero-stat-card:hover::before {
+    opacity: 1;
+    animation: statBorderRotate 3s linear infinite;
+}
+
+.eco-card::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: var(--radius-xl);
+    background: conic-gradient(from var(--angle, 0deg), transparent 60%, rgba(232,100,44,0.4) 80%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: -1;
+}
+.eco-card:hover::before {
+    opacity: 1;
+    animation: borderRotate 4s linear infinite;
+}
+
+/* ==========================================================================
+   Mesh blob animation classes
+   ========================================================================== */
+
+.hero-mesh-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+}
+.hero-mesh-blob:nth-child(1) {
+    width: 60vw; height: 60vw;
+    background: radial-gradient(circle, rgba(232,100,44,0.18) 0%, transparent 70%);
+    top: -20%; right: -15%;
+    animation: meshFloat1 20s ease-in-out infinite;
+}
+.hero-mesh-blob:nth-child(2) {
+    width: 40vw; height: 40vw;
+    background: radial-gradient(circle, rgba(244,132,95,0.1) 0%, transparent 70%);
+    bottom: -10%; left: -10%;
+    animation: meshFloat2 25s ease-in-out infinite;
+}
+.hero-mesh-blob:nth-child(3) {
+    width: 30vw; height: 30vw;
+    background: radial-gradient(circle, rgba(232,100,44,0.07) 0%, transparent 70%);
+    top: 40%; left: 30%;
+    animation: meshFloat3 18s ease-in-out infinite;
+}
+
+/* Page hero (issuances) — mesh blobs & grid */
+.page-hero-mesh-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+}
+.page-hero-mesh-blob:nth-child(1) {
+    width: 50vw; height: 50vw;
+    background: radial-gradient(circle, rgba(232,100,44,0.15) 0%, transparent 70%);
+    top: -30%; right: -10%;
+    animation: meshFloat1 18s ease-in-out infinite;
+}
+.page-hero-mesh-blob:nth-child(2) {
+    width: 35vw; height: 35vw;
+    background: radial-gradient(circle, rgba(244,132,95,0.1) 0%, transparent 70%);
+    bottom: -20%; left: -10%;
+    animation: meshFloat2 22s ease-in-out infinite;
+}
+
+.page-hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+    background-size: 80px 80px;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 20%, transparent 70%);
+    -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 20%, transparent 70%);
+}
+
+/* ==========================================================================
+   Shimmer text effect (gradient text with animated background-position)
+   ========================================================================== */
+
+.hero h1 .gradient-text {
+    background: linear-gradient(
+        90deg,
+        #E8642C 0%,
+        #F4845F 40%,
+        #FFB088 50%,
+        #F4845F 60%,
+        #E8642C 100%
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmerText 4s ease-in-out infinite 1.2s;
+}
+
+/* Shimmer overlay on featured eco-card visual */
+.eco-card--featured .eco-card-visual::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(45deg, transparent 45%, rgba(232,100,44,0.08) 50%, transparent 55%),
+        linear-gradient(-45deg, transparent 45%, rgba(244,132,95,0.05) 50%, transparent 55%);
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+/* ==========================================================================
+   Marquee / partners track
+   ========================================================================== */
+
+.marquee-wrapper {
+    -webkit-mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
+    mask-image: linear-gradient(90deg, transparent, black 8%, black 92%, transparent);
+}
+
+.marquee-track-forward { animation: marquee 45s linear infinite; }
+.marquee-track:hover  { animation-play-state: paused; }
+
+/* ==========================================================================
+   Scanline sweep & floating orbs
+   ========================================================================== */
+
+.partners-scanline {
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(232,100,44,0.04), transparent);
+    animation: scanline 8s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.partners-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+    animation: orbFloat 20s ease-in-out infinite;
+}
+
+/* ==========================================================================
+   Perspective grid overlays (-webkit-mask-image)
+   ========================================================================== */
+
+.hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 80px 80px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 20%, transparent 70%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 20%, transparent 70%);
+}
+
+.partners-bg-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(232,100,44,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(232,100,44,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 0%, transparent 70%);
+    -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 0%, transparent 70%);
+    pointer-events: none;
+}

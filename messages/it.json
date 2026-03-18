@@ -1,0 +1,1581 @@
+{
+  "Navbar": {
+    "nav": {
+      "products": "Prodotti",
+      "ecosystem": "Ecosistema",
+      "resources": "Risorse",
+      "about": "Chi Siamo",
+      "launchApp": "Mercati Idonei"
+    },
+    "mega": {
+      "issuances": "Emissioni",
+      "infrastructure": "Infrastruttura",
+      "platformsMarkets": "Piattaforme e Mercati",
+      "items": {
+        "USTBL": {
+          "name": "USTBL",
+          "descMatch": "U.S. Treasury Bills",
+          "desc": "Buoni del Tesoro USA · 4,3% Rend. ATM"
+        },
+        "nMSTR": {
+          "name": "nMSTR",
+          "descMatch": "MicroStrategy",
+          "desc": "MicroStrategy Inc."
+        },
+        "nTSLA": {
+          "name": "nTSLA",
+          "descMatch": "Tesla",
+          "desc": "Tesla, Inc."
+        },
+        "View All Issuances": {
+          "name": "Vedi Tutte le Emissioni",
+          "descMatch": "25+ more",
+          "desc": "Oltre 25 titoli tokenizzati"
+        },
+        "Liquid Network": {
+          "name": "Liquid Network",
+          "descMatch": "Bitcoin sidechain",
+          "desc": "Sidechain Bitcoin per regolamenti rapidi e riservati"
+        },
+        "Blockstream AMP": {
+          "name": "Blockstream AMP",
+          "descMatch": "Asset issuance",
+          "desc": "Piattaforma di emissione e gestione degli asset"
+        },
+        "OTC Desk": {
+          "name": "Desk OTC",
+          "descMatch": "Large-volume",
+          "desc": "Operazioni istituzionali ad alto volume"
+        },
+        "Governance": {
+          "name": "Governance",
+          "descMatch": "NexTR",
+          "desc": "NexTR — vota sulle proposte del protocollo"
+        },
+        "Exchange": {
+          "name": "Exchange",
+          "descMatch": "NexPlace",
+          "desc": "NexPlace — trading con order book in tempo reale"
+        },
+        "viewAll": {
+          "name": "View All Issuances",
+          "desc": "25+ more digital assets"
+        },
+        "liquidNetwork": {
+          "name": "Liquid Network",
+          "desc": "Bitcoin sidechain for fast, confidential settlements"
+        },
+        "blockstreamAmp": {
+          "name": "Blockstream AMP",
+          "desc": "Asset issuance & management platform"
+        },
+        "otcDesk": {
+          "name": "OTC Desk",
+          "desc": "Large-volume institutional trades"
+        },
+        "governance": {
+          "name": "Governance",
+          "desc": "NexTR — vote on protocol proposals"
+        },
+        "exchange": {
+          "name": "Exchange",
+          "desc": "NexPlace — real-time orderbook trading"
+        }
+      },
+      "featured": {
+        "badge": "In Evidenza",
+        "subtitle": "Buoni del Tesoro USA",
+        "cta": "Esplora USTBL",
+        "name": "USTBL",
+        "yield": "4.3%",
+        "yieldLabel": "ATM Yield"
+      },
+      "tags": {
+        "live": "Attivo",
+        "soon": "Prossimamente"
+      }
+    },
+    "resourcesMega": {
+      "legalFramework": "Quadro Normativo",
+      "faqs": "Domande Frequenti",
+      "insights": "Approfondimenti",
+      "legalDesc": "Licenze normative, conformità e supervisione",
+      "faqsDesc": "Domande frequenti su NexBridge",
+      "insightsDesc": "Comunicati, stampa e aggiornamenti di mercato"
+    },
+    "mobileNav": {
+      "products": "Prodotti",
+      "ecosystem": "Ecosistema",
+      "legalFramework": "Quadro Normativo",
+      "faqs": "Domande Frequenti",
+      "insights": "Approfondimenti",
+      "about": "Chi Siamo",
+      "launchApp": "Mercati Idonei"
+    },
+    "productTags": {
+      "live": "Attivo",
+      "comingSoon": "Prossimamente"
+    }
+  },
+  "Footer": {
+    "tagline": "Strumenti digitali regolamentati emessi su binari Bitcoin. Trasparenti, supervisionati e verificabili per design.",
+    "productsHeader": "Prodotti",
+    "platformsHeader": "Piattaforme e Mercati",
+    "resourcesHeader": "Risorse",
+    "learnHeader": "Formazione",
+    "links": {
+      "USTBL": "USTBL",
+      "nMSTR": "nMSTR",
+      "nSPY": "nSPY",
+      "All Products": "Tutti i Prodotti",
+      "Governance (NexTR)": "Governance (NexTR)",
+      "OTC Desk": "Desk OTC",
+      "Exchange (NexPlace)": "Exchange (NexPlace)",
+      "Legal Framework": "Quadro Normativo",
+      "FAQs": "Domande Frequenti",
+      "Insights": "Approfondimenti",
+      "Help Center": "Centro Assistenza",
+      "Glossary": "Glossario",
+      "Tutorials": "Tutorial",
+      "About Us": "Chi Siamo",
+      "Contact": "Contatti",
+      "allProducts": "All Products",
+      "governance": "Governance (NexTR)",
+      "otcDesk": "OTC Desk",
+      "exchange": "Exchange (NexPlace)",
+      "legalFramework": "Legal Framework",
+      "faqs": "FAQs",
+      "insights": "Insights",
+      "helpCenter": "Help Center",
+      "glossary": "Glossary",
+      "tutorials": "Tutorials",
+      "aboutUs": "About Us",
+      "contact": "Contact"
+    },
+    "leiLabel": "LEI",
+    "disclaimer": {
+      "p1": "NEXBRIDGE&reg; è un marchio registrato di proprietà di NexBridge Digital Financial Solutions S.A. de C.V., una società organizzata e costituita secondo le leggi della Repubblica di El Salvador. Tutti i prodotti e servizi sono soggetti alla legislazione sugli asset digitali applicabile della Repubblica di El Salvador e sono offerti sotto la supervisione normativa pubblica. Qualsiasi riferimento a prodotti o servizi si intende riferito esclusivamente a quei prodotti e servizi che sono stati debitamente autorizzati per l’offerta o la vendita dalle autorità competenti della Repubblica di El Salvador. Gli asset digitali descritti in questo sito web sono emessi dalla Repubblica di El Salvador e qualsiasi riferimento a un’‘offerta’, ‘emissione’ o ‘disponibilità’ si intende come un’offerta effettuata da El Salvador e regolata esclusivamente dalla legge salvadoregna e dall’autorizzazione normativa. L’accesso a tali asset digitali da altre giurisdizioni è soggetto alle leggi locali applicabili, ai requisiti di idoneità e ai Termini e Condizioni pertinenti, e potrebbe essere limitato o non disponibile. Nulla in questo sito web costituisce un’offerta o sollecitazione in alcuna giurisdizione in cui tale offerta o sollecitazione sarebbe illegale.",
+      "p2": "Laddove gli asset digitali siano resi accessibili attraverso distributori autorizzati o intermediari con licenza, tale accesso è fornito sotto la responsabilità normativa di tali distributori o intermediari, in conformità con le leggi locali applicabili e i requisiti di licenza. Nulla di quanto contenuto in questo sito web è inteso come consulenza sugli investimenti in asset digitali. Ogni investitore deve leggere e comprendere appieno i prospetti di emissione, i termsheet e l’ulteriore documentazione pubblicata in relazione all’emissione, offerta o vendita di asset digitali. Tale documentazione contiene tutti i fattori di rischio applicabili relativi agli asset digitali offerti.",
+      "copyright": "Copyright &copy; 2025 per NEXBRIDGE&reg;. Tutti i diritti riservati."
+    },
+    "leiCode": "4469000001EHY0TSFB93"
+  },
+  "CookieConsent": {
+    "title": "Utilizziamo i cookie",
+    "body": "Accettando tutti i cookie, acconsenti all’uso di questa tecnologia per migliorare la tua esperienza e per scopi di analisi e marketing. Puoi visitare le nostre <a href=\"#\" id=\"nbCookieSettingsLink\">Impostazioni Cookie</a> e la nostra <a href=\"/it/legal-framework\">Informativa sulla Privacy</a> per maggiori informazioni.",
+    "allowNecessary": "Solo Necessari",
+    "allowAll": "Accetta Tutti",
+    "settingsTitle": "Impostazioni Cookie",
+    "settingsDesc": "I cookie sono piccoli file di testo memorizzati sul tuo dispositivo quando visiti il nostro sito web. Consentono al sito web di riconoscere il tuo dispositivo e raccogliere informazioni sulle tue interazioni. Puoi scegliere di non consentire alcuni cookie, ma il loro blocco potrebbe influire sulla tua esperienza sul sito.",
+    "confirm": "Conferma",
+    "settingsAllowAll": "Accetta Tutti",
+    "categories": {
+      "necessary": {
+        "name": "Necessari",
+        "desc": "Essenziali per il funzionamento di base del sito web e delle sue funzionalità."
+      },
+      "functional": {
+        "name": "Funzionali",
+        "desc": "Ti consentono di ricordare le tue preferenze, come lingua, regione o credenziali di accesso."
+      },
+      "analytical": {
+        "name": "Analitici",
+        "desc": "Raccolgono informazioni su come utilizzi il sito per migliorarne la funzionalità."
+      },
+      "marketing": {
+        "name": "Marketing",
+        "desc": "Tracciano la tua attività online per offrirti pubblicità più rilevante."
+      }
+    }
+  },
+  "PasswordGate": {
+    "prompt": "Inserisci il codice di accesso per continuare",
+    "error": "Codice errato",
+    "placeholder": "Access code"
+  },
+  "HomePage": {
+    "hero": {
+      "badge": "Esposizione al mondo reale. Emissione di grado istituzionale. Distribuito attraverso sedi autorizzate.",
+      "title": "Il Futuro dei<br></br><gradient>Mercati dei Capitali Tokenizzati</gradient>",
+      "subtitle": "Strumenti digitali regolamentati emessi su binari Bitcoin — accessibili tramite distributori autorizzati, sedi e mercati idonei. Trasparenti, supervisionati e verificabili per design.",
+      "primaryCta": "Accedi",
+      "secondaryCta": "Esplora i Prodotti",
+      "stats": {
+        "ustblNav": "Valore Netto USTBL",
+        "assetsInDev": "Asset in Sviluppo",
+        "currentYield": "Rendimento Attuale USTBL",
+        "reserveBacking": "Riserva Garantita",
+        "porAudits": "Verifiche Proof-of-Reserve",
+        "porValue": "Mensile",
+        "navLabel": "USTBL Net Asset Value",
+        "pipelineLabel": "Assets in Pipeline",
+        "yieldLabel": "USTBL ATM Yield"
+      },
+      "ctaPrimary": "Get Access",
+      "ctaSecondary": "Explore Products"
+    },
+    "partners": {
+      "label": "Partner Affidabili",
+      "count": "Costruito con i <gradient>Leader del Settore</gradient>",
+      "title": "Built with <gradient>Industry Leaders</gradient>"
+    },
+    "products": {
+      "label": "Prodotti",
+      "title": "<gradient>Asset del Mondo Reale</gradient> Tokenizzati",
+      "subtitle": "Dai Buoni del Tesoro USA alle azioni blue-chip — ogni token è garantito 1:1, verificato mensilmente e governato da termsheet trasparenti.",
+      "viewAll": "Vedi Tutti i Prodotti →",
+      "underlying": {
+        "ustbl": "Buoni del Tesoro USA",
+        "nmstr": "MicroStrategy Inc.",
+        "ntsla": "Tesla, Inc.",
+        "nspy": "SPDR S&P 500 ETF",
+        "nnvda": "NVIDIA Corporation",
+        "njpm": "Fondo Reddito JPMorgan",
+        "nblk": "Portafoglio Crescita BlackRock",
+        "nqqq": "Invesco QQQ Trust"
+      },
+      "cards": {
+        "USTBL": {
+          "name": "USTBL",
+          "underlying": "U.S. Treasury Bills"
+        },
+        "nMSTR": {
+          "name": "nMSTR",
+          "underlying": "MicroStrategy Inc."
+        },
+        "nTSLA": {
+          "name": "nTSLA",
+          "underlying": "Tesla, Inc."
+        },
+        "nSPY": {
+          "name": "nSPY",
+          "underlying": "SPDR S&P 500 ETF"
+        },
+        "nNVDA": {
+          "name": "nNVDA",
+          "underlying": "NVIDIA Corporation"
+        },
+        "USYLD": {
+          "name": "USYLD",
+          "underlying": "U.S. Yield Fund"
+        },
+        "USGRW": {
+          "name": "USGRW",
+          "underlying": "U.S. Growth Allocation"
+        },
+        "nNSDQ": {
+          "name": "nNSDQ",
+          "underlying": "Invesco QQQ Trust"
+        }
+      },
+      "tags": {
+        "live": "Live",
+        "comingSoon": "Coming Soon"
+      }
+    },
+    "platforms": {
+      "label": "Piattaforme e Mercati",
+      "title": "Un Motore di Emissione.<br></br><gradient>Molteplici Punti di Accesso Regolamentati.</gradient>",
+      "subtitle": "Accedi all’emissione primaria, agli strumenti di governance/proprietà e alla liquidità secondaria attraverso binari regolamentati e connessi.",
+      "otc": {
+        "badge": "Istituzionale",
+        "title": "Mercato Primario (Desk OTC)",
+        "description": "Esegui operazioni ad alto volume con liquidità profonda e slippage minimo. Il nostro desk OTC istituzionale offre un servizio su misura per investitori e istituzioni qualificate.",
+        "link": "Vai al Desk OTC",
+        "desc": "Execute large-volume trades with deep liquidity and minimal slippage. Our institutional OTC desk provides white-glove service for qualified investors and institutions.",
+        "cta": "Go to OTC Desk"
+      },
+      "governance": {
+        "badge": "Governance",
+        "title": "Proprietà e Governance (NexTR)",
+        "description": "Partecipa alla governance del protocollo, vota le proposte e plasma il futuro della finanza tokenizzata attraverso NexTR.",
+        "link": "Vai a NexTR",
+        "desc": "Participate in governance discussions and stay informed on protocol developments through NexTR.",
+        "cta": "Go to NexTR"
+      },
+      "exchange": {
+        "badge": "Tempo Reale",
+        "title": "Mercati Secondari Regolamentati (NexPlace e sedi)",
+        "description": "Fai trading di titoli tokenizzati in un mercato completamente regolamentato. NexPlace offre trading con order book in tempo reale ed esecuzione di livello istituzionale.",
+        "link": "Vai a NexPlace",
+        "desc": "Trade digital assets in a fully regulated marketplace. NexPlace offers real-time orderbook trading and institutional-grade execution.",
+        "cta": "Go to NexPlace"
+      }
+    },
+    "infrastructure": {
+      "label": "Infrastruttura",
+      "title": "Alimentato da <gradient>Binari Bitcoin</gradient>",
+      "subtitle": "Gli asset tokenizzati di NexBridge sono costruiti sull’infrastruttura blockchain più sicura e collaudata disponibile.",
+      "liquid": {
+        "title": "Liquid Network",
+        "description": "Una sidechain Bitcoin che consente transazioni rapide e riservate con tempi di blocco di 2 minuti. Tutti i token NexBridge sono emessi e regolati su Liquid.",
+        "link": "Scopri di Più",
+        "desc": "A Bitcoin sidechain enabling fast, confidential transactions with 2-minute block times. All NexBridge tokens are issued and settled on Liquid.",
+        "badges": [
+          "Bitcoin L2",
+          "Confidential Tx",
+          "2-min Blocks"
+        ],
+        "cta": "Learn More"
+      },
+      "amp": {
+        "title": "Blockstream AMP",
+        "description": "La piattaforma di emissione e gestione degli asset che alimenta la creazione, distribuzione e gestione del ciclo di vita dei token NexBridge su Liquid Network.",
+        "link": "Scopri di Più",
+        "desc": "The asset issuance and management platform that powers NexBridge token creation, distribution, and lifecycle management on Liquid Network.",
+        "badges": [
+          "Asset Issuance",
+          "KYC/AML",
+          "Transfer Rules"
+        ],
+        "cta": "Learn More"
+      }
+    },
+    "features": {
+      "label": "Perché NexBridge",
+      "title": "Costruito per lo <gradient>Standard Istituzionale</gradient>",
+      "subtitle": "Ogni token è garantito da asset reali, verificato da revisori indipendenti e governato da regole trasparenti.",
+      "items": {
+        "0": {
+          "title": "Garanzia 1:1",
+          "description": "Ogni token è completamente collateralizzato dal suo asset sottostante, custodito in custodia di livello istituzionale."
+        },
+        "1": {
+          "title": "Verifiche Mensili",
+          "description": "Grant Thornton effettua verifiche indipendenti Proof-of-Reserve ogni mese — completamente trasparenti."
+        },
+        "2": {
+          "title": "Quadro Normativo",
+          "description": "Operando sotto supervisione normativa con verifica LEI e piena conformità legale."
+        },
+        "3": {
+          "title": "Termsheet Pubblici",
+          "description": "Ogni asset segue termsheet pubblici basati su regole. Nessun meccanismo nascosto."
+        },
+        "4": {
+          "title": "Binari Bitcoin",
+          "description": "Costruito sulla rete blockchain più sicura e decentralizzata — sfruttando l’infrastruttura Bitcoin."
+        },
+        "5": {
+          "title": "Regolamento Istantaneo",
+          "description": "Il regolamento on-chain riduce il rischio di controparte e consente eventi del ciclo di vita 24/7 — mentre l’accesso viene fornito attraverso sedi regolamentate e intermediari autorizzati."
+        },
+        "6": {
+          "title": "Programmabile e Integrabile",
+          "description": "I token supportano regole di trasferimento basate su policy e integrazioni con sedi approvate, wallet e piattaforme partner."
+        },
+        "7": {
+          "title": "Accesso Globale",
+          "description": "Accedi a investimenti di livello istituzionale nelle giurisdizioni idonee, tramite sedi autorizzate."
+        },
+        "backed": {
+          "title": "1:1 Asset Backed",
+          "desc": "Every token is fully collateralized by its underlying asset, held in institutional-grade custody."
+        },
+        "audits": {
+          "title": "Monthly Audits",
+          "desc": "Grant Thornton performs independent Proof-of-Reserve audits every month — fully transparent."
+        },
+        "regulated": {
+          "title": "Regulated Framework",
+          "desc": "Operating under regulatory oversight with LEI verification and full legal compliance."
+        },
+        "termsheets": {
+          "title": "Public Termsheets",
+          "desc": "Every asset follows publicly available, rules-based termsheets. No hidden mechanisms."
+        },
+        "bitcoin": {
+          "title": "Bitcoin Rails",
+          "desc": "Built on the most secure and decentralized blockchain network — leveraging Bitcoin infrastructure."
+        },
+        "settlement": {
+          "title": "Instant Settlement",
+          "desc": "On-chain settlement reduces counterparty risk and enables 24/7 lifecycle events — while access is delivered through regulated venues and authorized intermediaries."
+        },
+        "programmable": {
+          "title": "Programmable & Integratable",
+          "desc": "Tokens support policy-based transfer rules and integrations with approved venues, wallets, and partner platforms."
+        },
+        "global": {
+          "title": "Global Access",
+          "desc": "Access institutional-grade investments across eligible jurisdictions, through authorized venues."
+        }
+      }
+    },
+    "howItWorks": {
+      "label": "Come Funziona",
+      "title": "Tre Passi verso gli <gradient>Asset Tokenizzati</gradient>",
+      "steps": {
+        "0": {
+          "title": "Scegli il Tuo Asset",
+          "description": "Esplora la nostra suite di titoli tokenizzati — dai Buoni del Tesoro alle azioni blue-chip e portafogli diversificati."
+        },
+        "1": {
+          "title": "Conia Token",
+          "description": "Conia token garantiti 1:1 da asset del mondo reale. Ogni token è verificabile on-chain e verificato mensilmente."
+        },
+        "2": {
+          "title": "Tieni, Scambia o Gestisci",
+          "description": "Tieni per rendimento, scambia su NexPlace o integra con protocolli compatibili. I tuoi asset, la tua scelta."
+        },
+        "choose": {
+          "title": "Choose Your Asset",
+          "desc": "Browse our suite of digital assets — from Treasury Bills to blue-chip equities and diversified portfolios."
+        },
+        "subscribe": {
+          "title": "Subscribe via Authorized Distributors",
+          "desc": "Mint tokens backed 1:1 by real-world assets. Each token is verifiable on-chain and audited monthly."
+        },
+        "manage": {
+          "title": "Hold, Trade, or Manage",
+          "desc": "Hold for yield, trade on NexPlace, or integrate with compatible protocols. Your assets, your choice."
+        }
+      }
+    },
+    "cta": {
+      "label": "Inizia",
+      "title": "Pronto ad Accedere al Futuro<br></br>della <gradient>Finanza Tokenizzata?</gradient>",
+      "subtitle": "Asset digitali di livello istituzionale accessibili tramite sedi regolamentate e intermediari autorizzati.",
+      "primaryCta": "Apri App",
+      "secondaryCta": "Contattaci",
+      "ctaPrimary": "Eligible Markets",
+      "ctaSecondary": "Contact Us"
+    },
+    "meta": {
+      "title": "NEXBRIDGE | Regulated Digital Asset Issuance on Bitcoin",
+      "description": "NexBridge issues Digital Assets operating under a dedicated legal framework, delivering transparent, rules-based products on Bitcoin-aligned infrastructure. Licensed by El Salvador's National Digital Assets Commission."
+    }
+  },
+  "AboutPage": {
+    "hero": {
+      "label": "Chi Siamo",
+      "title": "Costruire il Futuro della<br></br>Finanza <gradient>Alimentata da Bitcoin</gradient>",
+      "subtitle": "Un emittente regolamentato che costruisce le fondamenta della finanza alimentata da Bitcoin — collegando i mercati dei capitali tradizionali con l’efficienza della blockchain dal 2023."
+    },
+    "mission": {
+      "title": "La Nostra Missione",
+      "description": "Stabilire un nuovo standard per emissioni digitali trasparenti, regolamentate e verificate in modo indipendente — costruite con il rigore dei mercati tradizionali e l’efficienza dell’infrastruttura Bitcoin.",
+      "desc": "To set a new standard for transparent, regulated, and independently audited digital issuances — built with the rigor of traditional markets and the efficiency of Bitcoin infrastructure."
+    },
+    "vision": {
+      "title": "La Nostra Visione",
+      "description": "Crediamo che innovazione e certezza normativa debbano lavorare insieme — non in conflitto — per costruire fiducia e sbloccare nuove possibilità per i mercati dei capitali. Strumenti digitali di livello istituzionale, accessibili attraverso mercati autorizzati, sotto una chiara regolamentazione pubblica.",
+      "desc": "We believe innovation and regulatory certainty must work together — not in conflict — to build trust and unlock new possibilities for capital markets. Institutional-grade digital instruments, accessible across authorized markets, under clear public regulation."
+    },
+    "story": {
+      "title": "Il Nostro Percorso",
+      "timeline": {
+        "0": {
+          "title": "Fondazione — 2023",
+          "description": "NexBridge è stata fondata in El Salvador per costruire un'infrastruttura di emissione digitale regolamentata su binari Bitcoin, collegando i mercati dei capitali tradizionali con l'efficienza della blockchain."
+        },
+        "1": {
+          "title": "Missione",
+          "description": "Ampliare l'accesso ad asset digitali di alta qualità portando opportunità di investimento on-chain con standard normativi robusti e dinamiche familiari della finanza tradizionale attraverso venue autorizzati e intermediari regolamentati."
+        },
+        "2": {
+          "title": "Lancio di USTBL — Traguardo",
+          "description": "Lanciato USTBL, il nostro primo strumento digitale regolamentato collegato ai Buoni del Tesoro USA su infrastruttura Bitcoin, dimostrando che l'esposizione ad asset del mondo reale può essere fornita on-chain con il rigore dei mercati pubblici. Raggiunto il soft cap di $30M in 48 ore."
+        },
+        "3": {
+          "title": "Prossimi Passi",
+          "description": "Ampliamento della nostra suite di prodotti, crescita della distribuzione attraverso exchange regolamentati aggiuntivi, preparazione del lancio del Desk OTC con licenza e scalabilità della distribuzione tramite distributori autorizzati e partecipanti di mercato."
+        },
+        "founded": {
+          "title": "Founded — 2023",
+          "desc": "NexBridge was founded in El Salvador to build regulated digital issuance infrastructure on Bitcoin rails, connecting traditional capital markets with blockchain efficiency."
+        },
+        "purpose": {
+          "title": "Purpose",
+          "desc": "Expanding access to high-quality digital assets by bringing investment opportunities on-chain with robust regulatory standards and familiar traditional finance dynamics through licensed venues and regulated intermediaries."
+        },
+        "ustblLaunch": {
+          "title": "USTBL Launch — Milestone",
+          "desc": "Launched USTBL, our first regulated digital instrument linked to U.S. Treasury Bills on Bitcoin infrastructure, proving real-world asset exposure can be delivered on-chain with public-market rigor. Reached $30M soft cap within 48 hours of launch (November 2024)."
+        },
+        "whatsNext": {
+          "title": "What's Next",
+          "desc": "Broadening our product suite, growing distribution through additional regulated exchanges, preparing licensed OTC Desk launch, and scaling distribution via authorized distributors and market participants."
+        }
+      }
+    },
+    "regulatory": {
+      "title": "Autorizzazioni Normative",
+      "subtitle": "Operando sotto una chiara regolamentazione pubblica in più giurisdizioni."
+    },
+    "meta": {
+      "title": "About NexBridge — Regulated Digital Asset Issuer",
+      "description": "Learn about NexBridge, a licensed digital asset issuer bringing institutional-grade products to eligible markets under El Salvador's Digital Assets Issuance Law."
+    },
+    "licenses": {
+      "title": "Regulatory <gradient>Authorizations</gradient>",
+      "subtitle": "Operating under clear public regulation across multiple jurisdictions.",
+      "cards": {
+        "issuer": {
+          "label": "Issuer License",
+          "value": "EAD-0005",
+          "source": "CNAD, El Salvador"
+        },
+        "dasp": {
+          "label": "DASP License",
+          "value": "PSAD-0034",
+          "source": "CNAD, El Salvador"
+        },
+        "vasp": {
+          "label": "VASP Registration",
+          "value": "No. 117",
+          "source": "CNV, Argentina"
+        },
+        "lei": {
+          "label": "Global LEI",
+          "value": "4469000001EHY0TSFB93",
+          "source": "GLEIF Foundation"
+        }
+      }
+    }
+  },
+  "ContactPage": {
+    "hero": {
+      "label": "Contatti",
+      "title": "Mettiti in<br></br><gradient>Contatto</gradient>",
+      "subtitle": "Siamo qui per aiutarti. Inviaci un messaggio e ti risponderemo il prima possibile."
+    },
+    "helpCenter": "Centro Assistenza",
+    "contact": "Contatto",
+    "us": "Con Noi",
+    "description": "Contatta il nostro team. Siamo qui per aiutarti con qualsiasi domanda sui prodotti e servizi NexBridge.",
+    "meta": {
+      "title": "Contact NexBridge — Get in Touch",
+      "description": "Contact the NexBridge team for inquiries about digital assets, partnerships, institutional trading, or regulatory information."
+    },
+    "info": {
+      "email": "info@nexbridge.io",
+      "telegram": "@NexBridge_RWA",
+      "helpCenter": "Help Center"
+    }
+  },
+  "EcosystemPage": {
+    "hero": {
+      "label": "Ecosistema",
+      "title": "Un Ecosistema.<br></br><gradient>Possibilità Illimitate.</gradient>",
+      "subtitle": "Governance, liquidità OTC, trading su exchange e altro — tutto perfettamente integrato nell’ecosistema NexBridge."
+    },
+    "ecosystem": "Ecosistema",
+    "networkTitle": "Costruito su una Rete di",
+    "trustedPartners": "Partner di Fiducia",
+    "description": "NexBridge collega un motore di emissione regolamentato con piattaforme di distribuzione, custodia, audit e partner infrastrutturali — consentendo accesso conforme e liquidità secondaria su più mercati.",
+    "filters": {
+      "all": "Tutti",
+      "infrastructure": "Infrastruttura",
+      "exchanges": "Exchange",
+      "auditCompliance": "Audit e Conformità",
+      "custodyWallets": "Custodia e Wallet",
+      "partnersInvestors": "Partner e Investitori",
+      "audit": "Audit & Compliance",
+      "custody": "Custody & Wallets",
+      "partners": "Partners & Investors"
+    },
+    "partners": {
+      "blockstream": {
+        "name": "Blockstream",
+        "desc": "Bitcoin infrastructure company powering Liquid and AMP."
+      },
+      "liquidNetwork": {
+        "name": "Liquid Network",
+        "desc": "Bitcoin sidechain for fast, confidential asset settlements."
+      },
+      "blockstreamAmp": {
+        "name": "Blockstream AMP",
+        "desc": "Managed asset issuance platform for regulated tokens."
+      },
+      "liquidFederation": {
+        "name": "Liquid Federation",
+        "desc": "Governance body overseeing the Liquid Network."
+      },
+      "bitfinex": {
+        "name": "Bitfinex",
+        "desc": "Major cryptocurrency exchange, primary USTBL trading venue."
+      },
+      "bitfinexSecurities": {
+        "name": "Bitfinex Securities",
+        "desc": "Regulated digital asset trading platform."
+      },
+      "coinstore": {
+        "name": "Coinstore",
+        "desc": "Global digital asset trading platform."
+      },
+      "xt": {
+        "name": "XT.com",
+        "desc": "Cryptocurrency exchange with USTBL/USDT trading pair."
+      },
+      "grantThornton": {
+        "name": "Grant Thornton",
+        "desc": "Independent auditor for monthly USTBL reserve verification."
+      },
+      "coinfirm": {
+        "name": "Coinfirm",
+        "desc": "Blockchain analytics and AML compliance provider."
+      },
+      "cnad": {
+        "name": "CNAD",
+        "desc": "National Commission of Digital Assets, El Salvador regulator."
+      },
+      "blockstreamGreen": {
+        "name": "Blockstream Green",
+        "desc": "Official Liquid Network wallet for USTBL custody."
+      },
+      "aquaWallet": "Wallet mobile che supporta asset della Liquid Network.",
+      "sideswap": {
+        "name": "SideSwap",
+        "desc": "Liquid Network wallet and atomic swap exchange."
+      },
+      "tether": {
+        "name": "Tether",
+        "desc": "Strategic partner, USDT stablecoin issuer."
+      },
+      "ishares": {
+        "name": "iShares (BlackRock)",
+        "desc": "Underlying ETF tracked by USTBL (IE00BGSF1X88)."
+      },
+      "particula": {
+        "name": "Particula",
+        "desc": "Digital asset rating agency, awarded USTBL an A rating."
+      },
+      "aqua": {
+        "name": "Aqua Wallet",
+        "desc": "Mobile wallet supporting Liquid Network assets."
+      }
+    },
+    "tags": {
+      "audit": "Audit",
+      "compliance": "Conformità",
+      "exchange": "Exchange",
+      "wallet": "Wallet",
+      "regulator": "Regolatore",
+      "rating": "Rating",
+      "underlyingAsset": "Asset Sottostante",
+      "strategicPartner": "Partner Strategico",
+      "governance": "Governance",
+      "infrastructure": "Infrastructure"
+    },
+    "buildSection": {
+      "title": "Costruisci con NexBridge",
+      "description": "Interessato a integrare gli asset NexBridge nella tua piattaforma, wallet o protocollo? Connettiamoci.",
+      "getInTouch": "Contattaci →",
+      "viewDocs": "Vedi Documentazione"
+    },
+    "meta": {
+      "title": "Ecosystem — NexBridge Partners & Infrastructure",
+      "description": "Explore the NexBridge ecosystem: custody partners, trading venues, technology providers, and institutional infrastructure powering digital assets."
+    },
+    "cta": {
+      "title": "Build with NexBridge",
+      "desc": "Interested in integrating NexBridge assets into your platform, wallet, or protocol? Let's connect.",
+      "ctaPrimary": "Get in Touch →",
+      "ctaSecondary": "View Documentation"
+    }
+  },
+  "ExplorePage": {
+    "title": "Esplora i Mercati NexBridge",
+    "subtitle": "Panoramica in tempo reale di tutti gli asset tokenizzati. Visualizza prezzi, offerta e piattaforme di trading prima di iniziare.",
+    "markets": {
+      "label": "Markets",
+      "live": "Live",
+      "comingSoon": "Coming Soon",
+      "soon": "Soon",
+      "fixedIncome": "Fixed Income",
+      "equities": "Equities",
+      "etfs": "ETFs",
+      "trade": "Trade",
+      "details": "Details"
+    },
+    "totalNav": "NAV Totale",
+    "circulatingSupply": "Offerta Circolante",
+    "tradingPairs": "Coppie di Trading",
+    "venues": "Piattaforme",
+    "updatedLive": "Aggiornato in Tempo Reale",
+    "high": "Massimo",
+    "low": "Minimo",
+    "bid": "Acquisto",
+    "ask": "Vendita",
+    "spread": "Spread",
+    "change24h": "Variazione 24h",
+    "atmYield": "Rendimento ATM",
+    "lastPrice": "Ultimo Prezzo",
+    "quickTrade": {
+      "label": "Quick Trade"
+    },
+    "swap": {
+      "title": "Swap",
+      "youPay": "You Pay",
+      "youReceive": "You Receive",
+      "enterAmount": "Enter an amount",
+      "rate": "Rate",
+      "priceImpact": "Price Impact",
+      "tradeOnOtc": "Trade on OTC Desk"
+    },
+    "youPay": "Paghi",
+    "youReceive": "Ricevi",
+    "enterAmount": "Inserisci un importo",
+    "rate": "Tasso",
+    "priceImpact": "Impatto sul Prezzo",
+    "network": "Rete",
+    "tradeOnOtc": "Opera sull'OTC Desk",
+    "fixedIncome": "Reddito Fisso",
+    "equities": "Azioni",
+    "indexes": "Indici",
+    "assets": "Asset",
+    "live": "Live",
+    "comingSoonPipeline": "Prossimi Lanci",
+    "comingSoon": "In Arrivo",
+    "trade": "Opera",
+    "readyToTrade": "Pronto per Operare?",
+    "readyToTradeDesc": "Connettiti al nostro OTC Desk per operare USTBL e i prossimi asset tokenizzati.",
+    "openOtcDesk": "Apri OTC Desk →",
+    "contactSales": "Contatta le Vendite",
+    "underlyingAsset": "Asset Sottostante",
+    "usTreasuryBills": "Buoni del Tesoro USA",
+    "aaSeriesFixedIncome": "Serie AA — Reddito Fisso",
+    "meta": {
+      "title": "Explore Markets — NexBridge Digital Assets",
+      "description": "Trade digital assets on NexBridge. Live pricing, real-time orderbooks, and institutional-grade market data for USTBL and upcoming products."
+    },
+    "hero": {
+      "heading": "Explore NexBridge Markets",
+      "subtitle": "Real-time overview of all tokenized assets. View pricing, supply, and trading venues before you start.",
+      "totalNav": "Total NAV",
+      "assets": "Assets",
+      "updatedLive": "Updated Live"
+    },
+    "chart": {
+      "high": "High",
+      "low": "Low",
+      "bid": "Bid",
+      "ask": "Ask",
+      "spread": "Spread",
+      "change24h": "24h Change",
+      "atmYield": "ATM Yield",
+      "nav": "NAV",
+      "circulatingSupply": "Circulating Supply",
+      "network": "Network",
+      "lastPrice": "Last Price"
+    },
+    "tradingInfo": {
+      "tradingPairs": "Trading Pairs",
+      "venues": "Venues"
+    },
+    "pipeline": {
+      "label": "Coming Soon Pipeline",
+      "equities": "Equities",
+      "indexes": "Indexes",
+      "aaSeries": "AA Series — Fixed Income"
+    },
+    "cta": {
+      "title": "Ready to Trade?",
+      "desc": "Connect with our OTC Desk to trade USTBL and upcoming tokenized assets.",
+      "ctaPrimary": "Open OTC Desk →",
+      "ctaSecondary": "Contact Sales"
+    }
+  },
+  "FaqPage": {
+    "hero": {
+      "label": "Domande Frequenti",
+      "title": "Domande<br></br><gradient>Frequenti</gradient>",
+      "subtitle": "Tutto ciò che devi sapere su NexBridge, i nostri prodotti e come funzionano."
+    },
+    "categories": {
+      "whoWeAre": "Chi Siamo",
+      "whatYouCanBuy": "Cosa Puoi Acquistare",
+      "howCanYouBuy": "Come Acquistare",
+      "whatsNext": "Prossimi Sviluppi"
+    },
+    "questions": {
+      "whatIsNexbridge": {
+        "q": "Cos’è NEXBRIDGE?",
+        "a": "NEXBRIDGE è un emittente regolamentato di asset digitali strutturati con un design simile a un ETF, basato su regole pubblicate ed emessi nativamente sul Liquid Network di Bitcoin. Ogni token include un termsheet pubblico che definisce commissioni, regole, rischi e diritti dell’investitore con numeri di registrazione dedicati."
+      },
+      "howRegulated": {
+        "q": "Come è regolamentato NEXBRIDGE?",
+        "a": "Debitamente autorizzato dalla Commissione Nazionale degli Asset Digitali di El Salvador (CNAD), con numero di registrazione EAD-0005. Ogni emissione riceve numeri di registrazione unici. Le autorizzazioni includono licenza di emittente, scambio di asset digitali, collocamento su piattaforma e gestione di prodotti di investimento."
+      },
+      "whoCanAccess": {
+        "q": "Chi può accedere agli asset NEXBRIDGE oggi?",
+        "a": "L’accesso al mercato primario è rivolto a investitori professionali/istituzionali (fondi, banche, broker, family office) che richiedono KYC/AML e whitelisting degli indirizzi. L’accesso al mercato secondario per utenti autonomi in giurisdizioni idonee dipende dalle regole specifiche di ciascun exchange e dalle restrizioni giurisdizionali."
+      },
+      "whoSafeguards": {
+        "q": "Chi tutela gli asset sottostanti?",
+        "a": "Depositari indipendenti e regolamentati detengono riserve segregate e specifiche per emissione. I controlli includono doppio controllo su NAV e operazioni di mint/burn, approvazioni documentate con marca temporale, riconciliazioni giornaliere e attestazioni mensili di assicurazione indipendente."
+      },
+      "whatIsUstbl": {
+        "q": "Cos’è USTBL?",
+        "a": "USTBL fornisce esposizione ad asset digitali a reddito fisso a breve termine (stile Treasury) emessi su infrastruttura Bitcoin, offrendo un rendimento integrato trasparente e fungendo da benchmark, ancora di liquidità e base per prodotti strutturati."
+      },
+      "whatProducts": {
+        "q": "Quali prodotti offre NEXBRIDGE?",
+        "a": "Attualmente offriamo USTBL (esposizione a reddito fisso a breve termine). Prossimamente: azioni tokenizzate, prodotti innovativi a reddito fisso ed emissione nativa di azioni on-chain. Disponibili anche: asset digitali personalizzati per istituzioni."
+      },
+      "compareEtfs": {
+        "q": "Come si confrontano i token NEXBRIDGE con gli ETFs?",
+        "a": "Come gli ETFs tradizionali, i token NEXBRIDGE replicano i mercati di riferimento secondo regole chiare e pubblicate. Offrono trasparenza attraverso meccanismi di ribilanciamento documentati, commissioni dichiarate, sottoscrizioni/rimborsi equi basati sul NAV, chiarezza normativa a livello di token, prova delle riserve, canali di regolamento istituzionale e focus sulla liquidità tramite OTC e quotazioni selettive su exchange."
+      },
+      "moreThanCollateral": {
+        "q": "Perché USTBL è più di «solo collaterale»?",
+        "a": "USTBL funziona come benchmark di reddito fisso on-chain, porta d’accesso per strategie istituzionali di riduzione del rischio, ancora di liquidità per market-making/prestiti, base per note strutturate e paga un rendimento integrato chiaro ai detentori."
+      },
+      "tokensHeld": {
+        "q": "Dove sono custoditi i miei token?",
+        "a": "I token rimangono in autocustodia tramite indirizzi approvati in whitelist (come Blockstream Green/Jade) o in custodia presso CEXs regolamentati che listano l’emissione. I trasferimenti avvengono solo tra indirizzi approvati."
+      },
+      "multichain": {
+        "q": "I vostri token sono multichain?",
+        "a": "L’emissione canonica esiste sulla tecnologia Bitcoin come unica fonte di verità. Futuri wrapper di accesso su altre chain replicherebbero le stesse regole del RID, manterrebbero rapporti di offerta 1:1 e regolerebbero sulla chain canonica."
+      },
+      "whyLiquid": {
+        "q": "Perché costruire su Liquid Network (tecnologia Bitcoin)?",
+        "a": "Liquid Network fornisce garanzia ancorata a Bitcoin, controlli basati su policy per emissioni regolamentate, regolamento efficiente e prevedibile, modelli di sicurezza maturi e capacità di transazioni confidenziali che riducono i rischi di front-running preservando la verificabilità."
+      },
+      "subscriptions": {
+        "q": "Come funzionano le sottoscrizioni e i rimborsi?",
+        "a": "Fase 1 (attuale): Ordini pre-finanziati, esecuzione al NAV di fine giornata con attivazione dei token in T+1. I rimborsi bloccano i token a T e processano i pagamenti T+1 al NAV. Fase 2 (prossima): RFQ per richieste più grandi e wallet di margine collateralizzati opzionali che supportano un regolamento più rapido."
+      },
+      "otcOnboarding": {
+        "q": "Come funziona il processo di onboarding al Desk OTC?",
+        "a": "Completare la verifica KYC/AML secondo il RID dell’emissione, registrare gli indirizzi di regolamento per il whitelisting, firmare i termini OTC e ricevere i contatti del desk e gli orari di cut-off prima dell’attivazione delle funzionalità di sottoscrizione/rimborso."
+      },
+      "fees": {
+        "q": "Dove posso trovare tutte le commissioni e i costi?",
+        "a": "Le commissioni OTC sono indicate nei T&C del Desk OTC e nel RID di ciascuna emissione; le commissioni degli exchange variano per piattaforma con spread che dipendono dalla liquidità dell’order book. Nessun costo nascosto; tutte le regole e le commissioni sono pubblicate nel RID e nei listini tariffari di ciascuna piattaforma."
+      },
+      "por": {
+        "q": "Come viene eseguita la Prova delle Riserve (PoR)?",
+        "a": "Attualmente, le attestazioni mensili di PoR da parte di Grant Thornton verificano le riserve e le riconciliazioni. La Fase 2 aggiunge un PoR ibrido che combina attestazioni mensili con verifica automatica on-chain dei conti di custodia e degli indirizzi blockchain."
+      },
+      "nearTermFocus": {
+        "q": "Qual è il focus a breve termine?",
+        "a": "Gestione del Desk OTC con funzionalità in espansione (migliore esecuzione, RFQ, finanziamento di margine), espansione dei wallet di autocustodia autorizzati, lancio di quotazioni selettive su CEXs con market maker professionali e pubblicazione di aggiornamenti sull’integrazione di stablecoin regolamentati."
+      },
+      "longTermVision": {
+        "q": "Qual è la visione a lungo termine?",
+        "a": "Costruire un’infrastruttura di mercati dei capitali interoperabile e incentrata su Bitcoin, dove le istituzioni possano accedere, strutturare e regolare esposizioni del mondo reale on-chain con la chiarezza di un ETF — partendo dai benchmark, espandendosi a strutture innovative e progredendo verso l’emissione nativa di azioni."
+      },
+      "compareToEtfs": {
+        "q": "How do NEXBRIDGE tokens compare to ETFs?",
+        "a": "Like traditional ETFs, NEXBRIDGE tokens track reference markets under clear, published rules. They offer transparency through documented rescaling mechanisms, disclosed fees, fair NAV-based subscriptions/redemptions, regulatory clarity at the token level, proof of reserves, institutional settlement rails, and liquidity focus through OTC and selective exchange listings."
+      },
+      "proofOfReserve": {
+        "q": "How do you execute Proof of Reserve (PoR)?",
+        "a": "Currently monthly PoR attestations by Grant Thornton verify reserves and reconciliations. Phase 2 adds hybrid PoR combining monthly attestations with automatic on-chain verification of custody accounts and blockchain addresses."
+      },
+      "ustblMoreThanCollateral": {
+        "q": "Why is USTBL more than \"just collateral\"?",
+        "a": "USTBL functions as an on-chain fixed-income benchmark, gateway for institutional de-risk strategies, liquidity anchor for market-making/lending, structured notes foundation, and pays clear integrated yield to holders."
+      },
+      "subscriptionsRedemptions": {
+        "q": "How do subscriptions and redemptions work?",
+        "a": "Phase 1 (current): Pre-fund orders, execute at end-of-day NAV with T+1 token activation. Redemptions lock tokens at T and process payouts T+1 at NAV. Phase 2 (upcoming): RFQ for larger requests and optional collateralized margin wallets supporting faster settlement."
+      },
+      "whereTokensHeld": {
+        "q": "Where are my tokens held?",
+        "a": "Tokens remain in either self-custody through approved whitelisted addresses (like Blockstream Green/Jade) or exchange custody at regulated CEXs listing the issuance. Transfers only occur between approved addresses."
+      },
+      "feesAndCosts": {
+        "q": "Where can I find all fees and costs?",
+        "a": "OTC fees appear in OTC Desk T&Cs and each issuance's RID; exchange fees vary by venue with spreads depending on order-book liquidity. No hidden costs; all rules and fees are published in the RID and venue fee schedules."
+      }
+    },
+    "stillHaveQuestions": "Hai ancora domande?",
+    "helpCenterDesc": "Visita il nostro Centro Assistenza per guide passo dopo passo, tutorial sui wallet e supporto all’onboarding.",
+    "visitHelpCenter": "Visita il Centro Assistenza",
+    "emailUs": "Scrivici un’Email",
+    "meta": {
+      "title": "FAQs — NexBridge Digital Assets",
+      "description": "Frequently asked questions about NexBridge digital assets, USTBL, regulatory compliance, trading venues, and how to get started."
+    },
+    "help": {
+      "title": "Still have questions?",
+      "desc": "Visit our Help Center for step-by-step guides, wallet tutorials, and onboarding support.",
+      "visitHelpCenter": "Visit Help Center",
+      "emailUs": "Email Us"
+    }
+  },
+  "GlossaryPage": {
+    "hero": {
+      "label": "Glossario",
+      "title": "Glossario dei<br></br><gradient>Termini</gradient>",
+      "subtitle": "Definizioni chiave dei termini utilizzati nell’ecosistema NexBridge e nella finanza tokenizzata."
+    },
+    "pageTitle": "Glossario",
+    "pageEmoji": "📖 Glossario",
+    "description": "Termini e definizioni chiave per comprendere gli asset reali tokenizzati, la regolamentazione degli asset digitali e l’ecosistema NexBridge.",
+    "terms": {
+      "aml": {
+        "term": "Antiriciclaggio",
+        "definition": "Leggi e procedure progettate per prevenire l’uso dei sistemi finanziari per il riciclaggio di denaro o il finanziamento del terrorismo.",
+        "abbr": "Anti-Money Laundering"
+      },
+      "bestExecution": {
+        "term": "Modello di Migliore Esecuzione",
+        "definition": "Un quadro che garantisce che le operazioni dei clienti vengano eseguite alle condizioni più favorevoli disponibili, minimizzando lo slippage e proteggendo gli investitori.",
+        "note": "Esecuzione trasparente in cui commissioni e prezzi sono comunicati in anticipo senza costi nascosti.",
+        "quote": "Prezzi «quello che vedi è quello che ottieni»"
+      },
+      "collateral": {
+        "term": "Collaterale",
+        "definition": "Asset dati in garanzia per assicurare una posizione finanziaria, spesso utilizzati nei prestiti o nei regolamenti."
+      },
+      "cnad": {
+        "term": "Comisión Nacional de Activos Digitales",
+        "definition": "L’autorità di regolamentazione di El Salvador che supervisiona le emissioni di asset digitali e la conformità.",
+        "abbr": "Comisión Nacional de Activos Digitales"
+      },
+      "custodian": {
+        "term": "Depositario",
+        "definition": "Un’istituzione regolamentata che custodisce gli asset reali sottostanti."
+      },
+      "dasp": {
+        "term": "Fornitore di Servizi su Asset Digitali",
+        "definition": "Entità autorizzate a operare exchange, custodia o distribuzione di asset digitali regolamentati.",
+        "abbr": "Digital Asset Service Provider"
+      },
+      "kyc": {
+        "term": "Adeguata Verifica della Clientela",
+        "definition": "Processo normativo di verifica dell’identità del cliente prima di consentire transazioni finanziarie.",
+        "abbr": "Know Your Customer"
+      },
+      "liquidNetwork": {
+        "term": "Liquid Network",
+        "definition": "Una sidechain Layer-2 di Bitcoin sviluppata da Blockstream, progettata per il regolamento rapido, riservato e sicuro degli asset digitali."
+      },
+      "nav": {
+        "term": "Valore Patrimoniale Netto",
+        "definition": "Il valore per token degli asset sottostanti meno le passività e le commissioni, calcolato giornalmente.",
+        "abbr": "Net Asset Value"
+      },
+      "otcDesk": {
+        "term": "Desk OTC",
+        "definition": "Un servizio regolamentato di mercato primario che consente sottoscrizioni e riscatti diretti al di fuori dei libri ordini pubblici."
+      },
+      "por": {
+        "term": "Prova delle Riserve",
+        "definition": "Prova crittografica o verificata che dimostra che un emittente detiene gli asset a garanzia dei propri token.",
+        "abbr": "PoR"
+      },
+      "redemption": {
+        "term": "Riscatto",
+        "definition": "L’atto di scambiare i token in cambio dell’asset sottostante o del suo equivalente in contanti."
+      },
+      "rid": {
+        "term": "Documento Informativo Rilevante",
+        "definition": "Un documento informativo regolamentato richiesto dalla Legge sull’Emissione di Asset Digitali di El Salvador, equivalente a un termsheet o prospetto.",
+        "abbr": "Relevant Information Document"
+      },
+      "selfCustody": {
+        "term": "Auto-custodia",
+        "definition": "Holding digital assets directly in one's own wallet, rather than with a custodian."
+      },
+      "serialIssuer": {
+        "term": "Emittente Seriale",
+        "definition": "Un’entità regolamentata autorizzata a lanciare più prodotti di asset digitali nell’ambito dello stesso quadro giuridico."
+      },
+      "tPlusOne": {
+        "term": "T+1",
+        "definition": "Ciclo di regolamento in cui le operazioni vengono finalizzate un giorno lavorativo dopo la data della transazione."
+      },
+      "tokenization": {
+        "term": "Tokenizzazione",
+        "definition": "Il processo di conversione dei diritti su un asset in un token digitale su blockchain."
+      },
+      "transfer": {
+        "term": "Trasferimento",
+        "definition": "Il processo di trasferimento di asset digitali da un portafoglio a un altro all’interno della rete blockchain."
+      },
+      "whitelistedWallet": {
+        "term": "Portafoglio Autorizzato",
+        "definition": "Un indirizzo di portafoglio digitale approvato tramite verifiche KYC/AML, autorizzato a ricevere e riscattare token regolamentati."
+      },
+      "wysiwyg": {
+        "term": "\"What you see is what you get\" pricing",
+        "definition": "Transparent execution where fees and pricing are disclosed upfront with no hidden costs."
+      }
+    },
+    "meta": {
+      "title": "Glossary — NexBridge Digital Asset Terms",
+      "description": "Key terms and definitions for understanding digital assets, regulation, and the NexBridge ecosystem."
+    }
+  },
+  "InsightsPage": {
+    "hero": {
+      "label": "Approfondimenti",
+      "title": "Approfondimenti e<br></br><gradient>Aggiornamenti</gradient>",
+      "subtitle": "Comunicati, stampa e aggiornamenti di mercato dal team NexBridge."
+    },
+    "insightsAnd": "Novità e",
+    "officialUpdates": "Aggiornamenti Ufficiali",
+    "description": "Resta aggiornato sugli ultimi sviluppi nella regolamentazione degli asset digitali, annunci di prodotti e asset reali tokenizzati di livello istituzionale di NexBridge.",
+    "insightsAndPress": "Novità e Stampa",
+    "tags": {
+      "pressRelease": "Comunicato Stampa",
+      "info": "Info",
+      "update": "Aggiornamento"
+    },
+    "readMore": "Leggi di Più",
+    "articles": {
+      "ustblLaunch": {
+        "title": "NexBridge Lancia la Prima Offerta Pubblica Regolamentata di Buoni del Tesoro USA Tokenizzati",
+        "excerpt": "Presentazione di USTBL, la prima offerta pubblica regolamentata di esposizione tokenizzata ai Buoni del Tesoro USA costruita sulla tecnologia Bitcoin tramite la Liquid Network di Blockstream."
+      },
+      "pioneeringFinance": {
+        "title": "NexBridge Lancia USTBL: Il Primo Buono del Tesoro USA Tokenizzato e Regolamentato su Tecnologia Bitcoin",
+        "excerpt": "Esposizione regolamentata al Tesoro che sfrutta la Liquid Network di Bitcoin e la tecnologia AMP di Blockstream, segnando una nuova era nella finanza tokenizzata."
+      },
+      "softCap": {
+        "title": "NexBridge Raggiunge l'Obiettivo Iniziale di $30 Milioni in Tempo Record per i Buoni del Tesoro Tokenizzati",
+        "excerpt": "USTBL sfrutta la Liquid Network di Bitcoin per semplificare e democratizzare l'accesso ad asset digitali sicuri legati al Tesoro per gli investitori nelle giurisdizioni idonee."
+      },
+      "auditCollab": {
+        "title": "NexBridge e Grant Thornton Annunciano una Collaborazione Continua per la Certificazione Mensile delle Riserve USTBL",
+        "excerpt": "NexBridge e Grant Thornton collaborano per la certificazione mensile continua delle riserve USTBL, rafforzando la fiducia istituzionale e la trasparenza."
+      },
+      "ridUpdate": {
+        "title": "Aggiornamento RID USTBL — Settembre 2025",
+        "excerpt": "Come parte del nostro impegno per la trasparenza e la rendicontazione regolare, abbiamo pubblicato una versione aggiornata del Documento di Informazione Rilevante (RID) per USTBL."
+      },
+      "ustblRidUpdate": {
+        "title": "USTBL RID Update — September 2025",
+        "excerpt": "As part of our commitment to transparency and regular reporting, we have published an updated version of the Relevant Information Document (RID) for USTBL."
+      },
+      "auditReport": {
+        "title": "NexBridge and Grant Thornton Announce Ongoing Collaboration for Monthly Certification of USTBL Reserves",
+        "excerpt": "NexBridge and Grant Thornton collaborate for ongoing monthly certification of USTBL reserves, reinforcing institutional trust and transparency."
+      },
+      "ustblReachesGoal": {
+        "title": "NexBridge Reaches Initial $30 Million Soft Cap in Record Time for Tokenized U.S. Treasury Bills",
+        "excerpt": "USTBL leverages Bitcoin's Liquid Network to simplify and democratize access to secure, Treasury-linked digital assets for investors in eligible jurisdictions."
+      }
+    },
+    "meta": {
+      "title": "Insights & Updates — NexBridge",
+      "description": "Stay informed on the latest NexBridge announcements, product updates, regulatory developments, and digital asset industry news."
+    },
+    "badges": {
+      "pressRelease": "Press Release",
+      "info": "Info",
+      "update": "Update"
+    }
+  },
+  "IssuancesPage": {
+    "hero": {
+      "label": "Emissioni di Asset Digitali",
+      "title": "Accesso Regolamentato ad <gradient>Asset del Mondo Reale</gradient>",
+      "subtitle": "NexBridge emette asset digitali regolamentati che forniscono esposizione a titoli del Tesoro USA, azioni e portafogli diversificati attraverso una struttura conforme e trasparente costruita sulla Liquid Network di Bitcoin."
+    },
+    "digitalAssetIssuances": "Emissioni di Asset Digitali",
+    "regulatedAccess": "Accesso Regolamentato a",
+    "realWorldAssets": "Asset del Mondo Reale",
+    "description": "NexBridge emette asset digitali regolamentati che forniscono esposizione ai Buoni del Tesoro USA, azioni e portafogli diversificati attraverso una struttura conforme e trasparente costruita sulla Liquid Network di Bitcoin.",
+    "flagshipProduct": "Prodotto di Punta",
+    "activeIssuance": "Emissione Attiva",
+    "fixedIncome": "Reddito Fisso",
+    "netAssetValue": "Valore Patrimoniale Netto",
+    "circulatingSupply": "Offerta Circolante",
+    "underlyingAsset": "Asset Sottostante",
+    "usTreasuryBills": "Buoni del Tesoro USA",
+    "elasticSupply": "Offerta Elastica",
+    "tradingVenues": "Piattaforme di Trading",
+    "tradingCurrencies": "Valute di Trading",
+    "tradeUstbl": "Opera USTBL",
+    "latestAuditReport": "Ultimo Rapporto di Audit",
+    "publicTermsheet": "Scheda Tecnica Pubblica (RID)",
+    "liquidity": "Liquidità",
+    "primary": "Primario",
+    "marketParticipants": "Partecipanti del Mercato",
+    "apiEndpoint": "Endpoint API",
+    "nextWave": "Prossima Ondata di Prodotti",
+    "equitiesLargeCap": "Azioni — Large-Cap",
+    "equitiesDesc": "Accesso tokenizzato alle aziende pubbliche più riconosciute al mondo, emesso sotto il quadro normativo di El Salvador.",
+    "upcomingLaunches": "Prossimi Lanci",
+    "comingSoon": "In Arrivo",
+    "indexesAaSeries": "Indici e Serie AA",
+    "indexes": "Indici",
+    "aaSeries": "Serie AA (Asset Allocation)",
+    "expandingSuite": "Ampliamento della nostra suite di emissioni regolamentate con esposizione azionaria e a reddito.",
+    "cantFindExposure": "Non Trovi la Tua Esposizione?",
+    "cantFindDesc": "Cerchi una versione tokenizzata di un'esposizione specifica? Facci sapere di cosa hai bisogno — il nostro team è pronto a costruirlo con te.",
+    "contactUs": "Contattaci",
+    "learnMore": "Scopri di Più",
+    "lastPrice": "Ultimo Prezzo",
+    "cashReserves": "Riserve di cassa",
+    "particulaRating": "Rating Particula (A)",
+    "live": "Live",
+    "meta": {
+      "title": "Issuances — NexBridge Digital Assets",
+      "description": "Browse all NexBridge digital assets: USTBL (U.S. Treasury Bills), equities (nMSTR, nTSLA, nNVDA), and ETFs. Live and upcoming issuances."
+    },
+    "flagship": {
+      "activeLabel": "Active Issuance",
+      "title": "Flagship Product",
+      "badges": {
+        "live": "Live",
+        "fixedIncome": "Fixed Income",
+        "elasticSupply": "Elastic Supply"
+      },
+      "stats": {
+        "lastPrice": "Last Price",
+        "circulatingSupply": "Circulating Supply",
+        "netAssetValue": "Net Asset Value"
+      },
+      "details": {
+        "underlyingAsset": "Underlying Asset",
+        "primary": "Primary",
+        "primaryValue": "iShares 0-1yr US Treasury ETF",
+        "isin": "ISIN",
+        "liquidity": "Liquidity",
+        "liquidityValue": "Cash reserves",
+        "tradingCurrencies": "Trading Currencies"
+      },
+      "tradingVenues": "Trading Venues",
+      "links": {
+        "publicTermsheet": "Public Termsheet (RID)",
+        "latestAudit": "Latest Audit Report",
+        "marketParticipants": "Market Participants",
+        "particulaRating": "Particula Rating (A)",
+        "apiEndpoint": "API Endpoint"
+      },
+      "cta": {
+        "trade": "Trade USTBL",
+        "learnMore": "Learn More"
+      }
+    },
+    "upcoming": {
+      "label": "Upcoming Launches",
+      "title": "Next Wave of Products",
+      "subtitle": "Expanding our regulated issuance suite with equity and income exposure.",
+      "comingSoon": "Coming Soon",
+      "cards": {
+        "nMSTR": {
+          "ticker": "nMSTR",
+          "name": "MicroStrategy Incorporated"
+        },
+        "nTSLA": {
+          "ticker": "nTSLA",
+          "name": "Tesla, Inc."
+        },
+        "nNSDQ": {
+          "ticker": "nNSDQ",
+          "name": "Invesco QQQ Trust"
+        },
+        "USYLD": {
+          "ticker": "USYLD",
+          "name": "U.S. Yield Token (Fixed Income)"
+        }
+      }
+    },
+    "equities": {
+      "label": "Coming Soon",
+      "title": "Equities — Large-Cap Stocks",
+      "subtitle": "Tokenized access to the world's most recognized public companies, issued under El Salvador's regulatory framework."
+    },
+    "indexesAA": {
+      "label": "Coming Soon",
+      "title": "Indexes & AA Series",
+      "indexesSubtitle": "Indexes",
+      "aaSubtitle": "AA Series (Asset Allocation)",
+      "indexes": {
+        "nASIA": {
+          "ticker": "nASIA",
+          "name": "iShares MSCI EM Asia UCITS ETF"
+        },
+        "nEMEQ": {
+          "ticker": "nEMEQ",
+          "name": "Xtrackers MSCI Emerging Markets UCITS ETF 1C"
+        },
+        "nSPY": {
+          "ticker": "nSPY",
+          "name": "SPDR S&P 500 ETF Trust"
+        }
+      },
+      "aa": {
+        "USGRW": {
+          "ticker": "USGRW",
+          "name": "BlackRock Managed Index Portfolios — Growth"
+        }
+      }
+    },
+    "cta": {
+      "title": "Can't Find Your Exposure?",
+      "desc": "Looking for a tokenized version of a specific exposure? Let us know what you need — our team is ready to build it with you.",
+      "button": "Contact Us"
+    }
+  },
+  "LegalFrameworkPage": {
+    "hero": {
+      "label": "Quadro Normativo",
+      "title": "Quadro<br></br><gradient>Normativo</gradient>",
+      "subtitle": "Informazioni normative, licenze e documentazione legale di NexBridge."
+    },
+    "legal": "Legale",
+    "framework": "Quadro",
+    "description": "NEXBRIDGE opera secondo la Legge sull'Emissione di Asset Digitali di El Salvador, mantenendo una governance solida, politiche AML/CFT rigorose e audit indipendenti per l'emissione regolamentata di asset digitali.",
+    "regulatoryAuthorizations": "Autorizzazioni Regolatorie",
+    "authorizationsDesc": "NEXBRIDGE opera sotto queste autorizzazioni regolatorie.",
+    "issuerLicense": "Licenza di Emittente",
+    "serialIssuerDesc": "NEXBRIDGE detiene una licenza di Emittente Seriale che consente l'emissione semplificata di molteplici titoli digitali regolamentati sotto un'unica autorizzazione.",
+    "serialIssuerLicense": "Licenza di Emittente Seriale",
+    "daspLicense": "Licenza DASP",
+    "vaspRegistration": "Registrazione VASP",
+    "vaspDesc": "NEXBRIDGE è registrato come Fornitore di Servizi di Asset Virtuali (VASP No. 117) presso la Comisión Nacional de Valores (CNV) dell'Argentina, rafforzando la presenza regionale mentre le regolamentazioni argentine sugli asset digitali si sviluppano.",
+    "leiTitle": "Identificativo di Entità Legale (LEI)",
+    "leiDesc": "NEXBRIDGE detiene un LEI globale supervisionato dalla Global Legal Entity Identifier Foundation (GLEIF). Questo identificativo internazionale dimostra l'identità legale a regolatori, partner e investitori, supportando l'adozione del vLEI per una protezione aggiuntiva contro le frodi.",
+    "globalLei": "LEI Globale",
+    "regulatoryBodies": {
+      "title": "Regulatory Bodies",
+      "subtitle": "The institutions that oversee and authorize NEXBRIDGE operations.",
+      "cnad": {
+        "title": "CNAD: National Commission for Digital Assets",
+        "desc": "El Salvador's official regulatory body responsible for granting licenses, approving issuances and certifiers, registering digital asset service providers, supervising operations, and ensuring compliance with the Digital Assets Issuance Law."
+      },
+      "cnv": {
+        "title": "CNV: Argentina's Securities Commission",
+        "desc": "NEXBRIDGE is registered as Virtual Asset Service Provider (VASP No. 117) under Argentina's Comisión Nacional de Valores (CNV), reinforcing regional presence as Argentina's digital asset regulations develop."
+      },
+      "lei": {
+        "title": "Legal Entity Identifier (LEI)",
+        "desc": "NEXBRIDGE holds a global LEI supervised by the Global Legal Entity Identifier Foundation (GLEIF). This international identifier proves legal identity to regulators, partners, and investors while supporting vLEI adoption for additional fraud protection."
+      }
+    },
+    "regulatoryBodiesDesc": "Le istituzioni che supervisionano e autorizzano le operazioni di NEXBRIDGE.",
+    "cnadTitle": "CNAD: Commissione Nazionale degli Asset Digitali",
+    "cnadDesc": "Organismo di regolamentazione ufficiale di El Salvador responsabile del rilascio di licenze, dell'approvazione di emissioni e certificatori, della registrazione dei fornitori di servizi di asset digitali, della supervisione delle operazioni e della garanzia di conformità con la Legge sull'Emissione di Asset Digitali.",
+    "cnvTitle": "CNV: Commissione Titoli dell'Argentina",
+    "regulatoryProcess": {
+      "title": "Regulatory Process",
+      "subtitle": "Every NEXBRIDGE product follows El Salvador's Digital Assets Issuance Law through four steps.",
+      "steps": {
+        "certified": {
+          "title": "Certified",
+          "desc": "Every product is validated by an independent approved certifier"
+        },
+        "registered": {
+          "title": "Registered",
+          "desc": "Official registration and approval by CNAD, El Salvador's National Commission of Digital Assets"
+        },
+        "audited": {
+          "title": "Audited",
+          "desc": "Reserves and performance are verified monthly by Grant Thornton; NAV is updated daily"
+        },
+        "supervised": {
+          "title": "Supervised",
+          "desc": "Ongoing oversight ensures operational integrity and regulatory clarity with all applicable laws"
+        }
+      }
+    },
+    "regulatoryProcessDesc": "Ogni prodotto NEXBRIDGE segue la Legge sull'Emissione di Asset Digitali di El Salvador attraverso quattro passaggi.",
+    "steps": {
+      "registered": {
+        "title": "Registrato",
+        "description": "Registrazione e approvazione ufficiale da parte della CNAD, Commissione Nazionale degli Asset Digitali di El Salvador"
+      },
+      "certified": {
+        "title": "Certificato",
+        "description": "Ogni prodotto è validato da un certificatore indipendente approvato"
+      },
+      "audited": {
+        "title": "Verificato",
+        "description": "Le riserve e le performance sono verificate mensilmente da Grant Thornton; il NAV viene aggiornato quotidianamente"
+      },
+      "supervised": {
+        "title": "Supervisionato",
+        "description": "La supervisione continua garantisce l'integrità operativa e la chiarezza normativa con tutte le leggi applicabili"
+      }
+    },
+    "complianceFeatures": "Funzionalità di Conformità",
+    "complianceFeaturesDesc": "Salvaguardie integrate che garantiscono che ogni emissione soddisfi gli standard istituzionali.",
+    "features": {
+      "kycAml": {
+        "title": "KYC / AML",
+        "description": "Verifica completa dell'identità e controlli antiriciclaggio allineati agli standard FATF/GAFI per ogni partecipante."
+      },
+      "por": {
+        "title": "Prova delle Riserve",
+        "description": "La verifica indipendente mensile di Grant Thornton conferma che tutti i token emessi sono completamente garantiti dagli asset sottostanti."
+      },
+      "investorProtection": {
+        "title": "Protezione degli Investitori",
+        "description": "Gli asset sono detenuti in custodia segregata presso controparti regolamentate, garantendo la completa separazione dai fondi operativi."
+      },
+      "dailyNav": {
+        "title": "Aggiornamenti Giornalieri del NAV",
+        "description": "Il Valore Patrimoniale Netto viene calcolato e pubblicato quotidianamente, fornendo trasparenza in tempo reale sul valore di ogni token."
+      },
+      "transparentReporting": {
+        "title": "Reportistica Trasparente",
+        "description": "Tutti i documenti chiave, inclusi i prospetti e i rapporti di audit, sono disponibili pubblicamente attraverso il registro ufficiale della CNAD."
+      }
+    },
+    "lookingAhead": {
+      "title": "Looking Ahead",
+      "desc": "As regulatory frameworks for digital assets evolve worldwide, NEXBRIDGE monitors changes and expands licensing step-by-step — ensuring our products remain compliant and accessible in key jurisdictions, always under clear public supervision."
+    },
+    "lookingAheadDesc": "Man mano che i quadri normativi per gli asset digitali evolvono a livello mondiale, NEXBRIDGE monitora i cambiamenti ed espande le licenze passo dopo passo — garantendo che i nostri prodotti rimangano conformi e accessibili nelle giurisdizioni chiave, sempre sotto una chiara supervisione pubblica.",
+    "jurisdictions": {
+      "cnadElSalvador": "CNAD, El Salvador",
+      "cnvArgentina": "CNV, Argentina",
+      "gleifFoundation": "Fondazione GLEIF"
+    },
+    "meta": {
+      "title": "Legal Framework — NexBridge Regulatory Compliance",
+      "description": "NexBridge's legal framework: licensed under El Salvador's Digital Assets Issuance Law, regulated by the National Digital Assets Commission (CNAD)."
+    },
+    "authorizations": {
+      "title": "Regulatory Authorizations",
+      "subtitle": "NEXBRIDGE operates under these regulatory authorizations.",
+      "cards": {
+        "issuer": {
+          "label": "Issuer License",
+          "value": "EAD-0005",
+          "source": "CNAD, El Salvador"
+        },
+        "dasp": {
+          "label": "DASP License",
+          "value": "PSAD-0034",
+          "source": "CNAD, El Salvador"
+        },
+        "vasp": {
+          "label": "VASP Registration",
+          "value": "No. 117",
+          "source": "CNV, Argentina"
+        },
+        "lei": {
+          "label": "Global LEI",
+          "value": "4469000001EHY0TSFB93",
+          "source": "GLEIF Foundation"
+        }
+      }
+    },
+    "compliance": {
+      "title": "Compliance Features",
+      "subtitle": "Built-in safeguards that ensure every issuance meets institutional standards.",
+      "features": {
+        "kycAml": {
+          "title": "KYC / AML",
+          "desc": "Full identity verification and anti-money laundering checks aligned with FATF/GAFI standards for every participant."
+        },
+        "proofOfReserves": {
+          "title": "Proof of Reserves",
+          "desc": "Monthly independent verification by Grant Thornton confirms that all issued tokens are fully backed by underlying assets."
+        },
+        "investorProtection": {
+          "title": "Investor Protection",
+          "desc": "Assets are held in segregated custody with regulated counterparties, ensuring complete separation from operational funds."
+        },
+        "dailyNav": {
+          "title": "Daily NAV Updates",
+          "desc": "Net Asset Value is calculated and published daily, providing real-time transparency on the value of each token."
+        },
+        "transparentReporting": {
+          "title": "Transparent Reporting",
+          "desc": "All key documents, including prospectuses and audit reports, are publicly available through CNAD's official registry."
+        },
+        "serialIssuer": {
+          "title": "Serial Issuer License",
+          "desc": "NEXBRIDGE holds a Serial Issuer license enabling streamlined issuance of multiple regulated digital assets under one authorization."
+        }
+      }
+    }
+  },
+  "TutorialsPage": {
+    "hero": {
+      "label": "Tutorial",
+      "title": "Tutorial e<br></br><gradient>Guide</gradient>",
+      "subtitle": "Impara a utilizzare i prodotti e servizi di NexBridge passo dopo passo."
+    },
+    "learnNexbridge": "Impara NEXBRIDGE —",
+    "learningCenter": "Centro di Apprendimento",
+    "description": "Tutorial pratici per iniziare nell'ecosistema di asset NEXBRIDGE: dalla verifica del wallet all'invio di asset regolamentati con sicurezza. Progettati per utenti autonomi, team operativi e istituzioni.",
+    "categories": {
+      "gettingStarted": "Per Iniziare",
+      "walletSetup": "Configurazione Wallet",
+      "transfers": "Trasferimenti"
+    },
+    "badge": "Rapido e Pratico",
+    "tutorials": {
+      "whitelist": {
+        "title": "Come registrare il tuo wallet Liquid sull'OTC NEXBRIDGE",
+        "description": "Crea un wallet Liquid in Green, proteggi il tuo seed, genera il tuo account AMP e aggiungi il tuo ID AMP sull'OTC Desk. Lascia tutto abilitato per ricevere/trasferire asset regolamentati da indirizzi verificati."
+      },
+      "importWallet": {
+        "title": "Come importare il tuo wallet su Blockstream App",
+        "description": "Ripristina o importa il tuo wallet Liquid esistente in pochi minuti. Segui le migliori pratiche per la gestione e la verifica del seed per garantire una configurazione pulita e sicura. In questo esempio utilizziamo Blockstream App (Green Wallet).",
+        "desc": "Restore or import your existing Liquid wallet in minutes. Follow best practices for seed handling and verification to ensure a clean, secure setup. For this example we're using Blockstream App (Green Wallet)."
+      },
+      "sendIssuances": {
+        "title": "Come inviare emissioni NEXBRIDGE su Liquid Network",
+        "description": "Comprendi L-BTC vs. token regolamentati (es. USTBL), come il whitelisting influisce sui trasferimenti, e come appaiono le transazioni fallite vs. riuscite nella pratica. Concludi con una checklist per confermare depositi e conferme dei blocchi.",
+        "desc": "Understand L-BTC vs. regulated tokens (e.g., USTBL), how whitelisting affects transfers, and what failed vs. successful transactions look like in practice. Finish with a checklist to confirm deposits and block confirmations."
+      },
+      "whitelistWallet": {
+        "title": "How to Whitelist Your Liquid Wallet on the NEXBRIDGE OTC",
+        "desc": "Create a Liquid wallet in Green, secure your seed, generate your AMP account, and add your AMP ID on the OTC Desk. Leave fully enabled to receive/transfer regulated assets from verified addresses."
+      }
+    },
+    "needHelp": "Hai Bisogno di Ulteriore Aiuto?",
+    "needHelpDesc": "Visita il nostro Centro Assistenza per guide passo-passo, risoluzione problemi e supporto all'onboarding.",
+    "visitHelpCenter": "Visita il Centro Assistenza →",
+    "helpCenter": "Centro Assistenza",
+    "contactUs": "Contattaci",
+    "meta": {
+      "title": "Tutorials — How to Trade NexBridge Digital Assets",
+      "description": "Step-by-step guides for trading NexBridge digital assets. Learn how to buy USTBL, set up a wallet, and access eligible trading venues."
+    },
+    "badges": {
+      "gettingStarted": "Getting Started",
+      "walletSetup": "Wallet Setup",
+      "transfers": "Transfers"
+    },
+    "links": {
+      "helpCenter": "Help Center",
+      "contactUs": "Contact Us"
+    },
+    "cta": {
+      "title": "Need More Help?",
+      "desc": "Visit our Help Center for step-by-step guides, troubleshooting, and onboarding support.",
+      "ctaPrimary": "Visit Help Center →",
+      "ctaSecondary": "Contact Us"
+    }
+  },
+  "InsightArticles": {
+    "auditReport": {
+      "backToInsights": "Torna alle Novità",
+      "tag": "Partnership",
+      "title": "NexBridge e Grant Thornton Annunciano una Collaborazione Continua per la Certificazione Mensile delle Riserve USTBL",
+      "date": "18 dicembre 2024",
+      "intro": "NexBridge Digital Financial Solutions ha stretto una partnership con Grant Thornton per condurre audit indipendenti mensili delle riserve a garanzia del token USTBL. Questa collaborazione opera sotto il quadro normativo di El Salvador ed è progettata per garantire i più alti standard di trasparenza e protezione degli investitori.",
+      "fullReserveBacking": "Copertura Totale delle Riserve",
+      "underlyingAssets": "Asset Sottostanti",
+      "badge": "Partnership",
+      "sections": {
+        "fullReserveBacking": "Full Reserve Backing",
+        "underlyingAssets": "Underlying Assets"
+      },
+      "content": {
+        "intro": "NexBridge Digital Financial Solutions has partnered with Grant Thornton to conduct monthly independent audits of the reserves backing the USTBL token. This collaboration operates under El Salvador's regulatory framework and is designed to ensure the highest standards of transparency and investor protection.",
+        "fullReserveP1": "The partnership ensures that all outstanding USTBL tokens remain fully backed by liquid and verifiable assets at all times. Each month, Grant Thornton independently verifies the assets held in segregated accounts and validates the token's Net Asset Value (NAV), providing an additional layer of assurance for token holders.",
+        "underlyingP1": "100% of USTBL tokens are supported by short-term U.S. Treasury ETFs (ISIN: IE00BGSF1X88), providing investors with exposure to U.S. Treasury performance through the underlying ETF. This structure ensures that the token's value is anchored to one of the most trusted and liquid asset classes in global markets.",
+        "quote": "\"This partnership with Grant Thornton highlights our unwavering commitment to transparency and investor trust.\"",
+        "quoteAttrib": "— Michele Crivelli, Founder, NexBridge",
+        "closing": "The latest audit report is publicly available at ustbl.io/docs/Audits.pdf, reinforcing NexBridge's dedication to open and verifiable financial operations."
+      }
+    },
+    "pioneeringFinance": {
+      "backToInsights": "Torna alle Novità",
+      "tag": "Lancio",
+      "title": "NexBridge Lancia USTBL: Il Primo Buono del Tesoro USA Tokenizzato e Regolamentato su Tecnologia Bitcoin",
+      "date": "16 dicembre 2024",
+      "marketContext": "Contesto di Mercato",
+      "regulatoryFramework": "Quadro Normativo",
+      "technicalFoundation": "Fondamento Tecnico",
+      "futurePlans": "Piani Futuri",
+      "badge": "Launch",
+      "sections": {
+        "technicalFoundation": "Technical Foundation",
+        "regulatoryFramework": "Regulatory Framework",
+        "marketContext": "Market Context",
+        "futurePlans": "Future Plans"
+      },
+      "content": {
+        "intro": "NexBridge announced the launch of USTBL — the first regulated public offering of tokenized U.S. Treasury exposure built on Bitcoin technology. USTBL aims to democratize access to U.S. Treasury returns by leveraging the security and efficiency of blockchain infrastructure.",
+        "technicalP1": "USTBL operates on Bitcoin's Liquid Network, utilizing Blockstream's Asset Management Platform (AMP). The AMP framework enforces transfer restrictions at the protocol level, ensuring that only KYC/AML-verified investors can hold and transfer tokens. This design embeds compliance directly into the token infrastructure.",
+        "technicalP2": "As part of its commitment to the Bitcoin ecosystem, NexBridge joined the Liquid Federation, a consortium of over 70 Bitcoin-focused companies and exchanges that collectively maintain and govern the Liquid Network.",
+        "regulatoryP1": "USTBL is issued under El Salvador's Digital Asset Law, with NexBridge registered with the National Commission of Digital Assets (CNAD) as a licensed digital asset issuer. The token launched on Bitfinex Securities, the first platform licensed as a Digital Asset Service Provider (DASP) under Salvadoran regulations.",
+        "marketP1": "The launch of USTBL comes at a time of accelerating institutional interest in tokenized real-world assets. Research from BCG projects that the tokenized asset market could reach $16 trillion by 2030, reflecting the significant potential for blockchain-based financial products.",
+        "marketP2": "An EY-Parthenon survey further underscores this trend, finding that 86% of institutional investors rank tokenized alternative assets as their top choice when considering blockchain-based investment products. This growing institutional appetite validates the market opportunity that USTBL addresses.",
+        "futureP1": "USTBL represents the initial step in NexBridge's broader product roadmap. The company plans to introduce equity-based products in the near term, before expanding to develop new financial instruments that are not currently available through traditional market infrastructure."
+      }
+    },
+    "ustblReachesGoal": {
+      "backToInsights": "Torna alle Novità",
+      "tag": "Traguardo",
+      "title": "NexBridge Raggiunge l'Obiettivo Iniziale di $30 Milioni in Tempo Record per i Buoni del Tesoro Tokenizzati",
+      "date": "26 novembre 2024",
+      "keyPartners": "Partner Chiave",
+      "liquidNetworkEcosystem": "Ecosistema Liquid Network",
+      "badge": "Milestone",
+      "sections": {
+        "liquidEcosystem": "Liquid Network Ecosystem",
+        "keyPartners": "Key Partners"
+      },
+      "content": {
+        "intro": "NexBridge reached its $30 million soft cap for USTBL within just 48 hours of launch, demonstrating strong market demand for regulated, blockchain-based Treasury exposure.",
+        "p2": "USTBL operates on Bitcoin's Liquid Network, combining the trusted stability of U.S. Treasuries with the efficiency of blockchain settlement. Following the initial subscription period, the offering remained open through November 29, with bi-weekly subscription windows established thereafter to accommodate ongoing investor interest.",
+        "liquidEcosystemP1": "The Liquid Network currently holds over $2 billion in real-world assets (RWAs), establishing it as a significant platform for tokenized financial products. USTBL's rapid uptake further validates the network's role in institutional-grade digital asset issuance.",
+        "keyPartnersBlockstream": "Blockstream — Provides the AMP (Asset Management Platform) and Liquid Network infrastructure that powers USTBL's issuance, transfer restrictions, and compliance enforcement.",
+        "keyPartnersBitfinex": "Bitfinex Securities — Delivers foundational platform support as the first licensed Digital Asset Service Provider under El Salvador's regulations, enabling investor access to USTBL.",
+        "quoteMichele": "\"This milestone represents more than a financial achievement — it reflects the strength of NexBridge's vision and execution.\"",
+        "quoteMicheleAttrib": "— Michele Crivelli, Founder, NexBridge",
+        "quoteNicolas": "\"We are bridging the gap between blockchain technology and government-backed digital assets.\"",
+        "quoteNicolasAttrib": "— Nicolas Cane, NexBridge",
+        "closing": "USTBL gives investors in eligible jurisdictions blockchain-based access to U.S. Treasury returns while maintaining full regulatory compliance. The record-setting soft cap achievement underscores the growing demand for transparent, regulated digital asset products built on proven infrastructure."
+      }
+    },
+    "ustblRidUpdate": {
+      "backToInsights": "Torna alle Novità",
+      "tag": "Aggiornamento Normativo",
+      "title": "Aggiornamento RID USTBL — Settembre 2025",
+      "date": "11 settembre 2025",
+      "keyChanges": "Modifiche Principali",
+      "decimalExpansion": "Miglioramento Tecnico: Espansione Decimale",
+      "yieldUpdates": "Aggiornamenti su Rendimento ed Emittente",
+      "additionalUpdates": "Aggiornamenti Aggiuntivi"
+    },
+    "ustblPress": {
+      "backToInsights": "Torna alle Novità",
+      "tag": "Comunicato Stampa",
+      "title": "NexBridge Lancia la Prima Offerta Pubblica Regolamentata di Buoni del Tesoro USA Tokenizzati",
+      "date": "18 novembre 2024",
+      "regulatoryFoundation": "Fondamento Normativo",
+      "builtOnBitcoin": "Costruito sull'Infrastruttura Bitcoin",
+      "democratizingAccess": "Democratizzare l'Accesso",
+      "strategicPartnerships": "Partnership Strategiche"
+    },
+    "backToInsights": "Back to Insights",
+    "ustbl": {
+      "badge": "Press Release",
+      "title": "NexBridge Launches First Regulated Public Offering of Tokenized U.S. Treasury Bills",
+      "date": "November 18, 2024",
+      "sections": {
+        "builtOnBitcoin": "Built on Bitcoin Infrastructure",
+        "regulatoryFoundation": "Regulatory Foundation",
+        "strategicPartnerships": "Strategic Partnerships",
+        "democratizingAccess": "Democratizing Access"
+      },
+      "content": {
+        "intro": "NexBridge launched USTBL — the first regulated public offering of tokenized U.S. Treasury exposure on Bitcoin technology, with an initial soft cap of $30 million. The product is designed to bring the stability and yield of U.S. Treasuries to investors in eligible jurisdictions through blockchain infrastructure.",
+        "builtOnBitcoinP1": "USTBL is built on Bitcoin's Liquid Network using Blockstream's Asset Management Platform (AMP). This technology stack enables standardized compliance rules that can be enforced across jurisdictions, embedding KYC/AML verification directly at the token level to ensure only approved investors can participate.",
+        "builtOnBitcoinP2": "The launch of USTBL is expected to increase total real-world assets (RWAs) on the Liquid Network to over $2 billion, representing more than 15% of the blockchain-based RWA market.",
+        "regulatoryP1": "USTBL is issued under El Salvador's Digital Asset Law, providing a clear and established regulatory framework for the offering. Bitfinex Securities, which became El Salvador's first Digital Asset License holder in 2023, serves as the listing platform for USTBL, connecting the token to a regulated exchange infrastructure.",
+        "partnershipsP1": "NexBridge has joined the Liquid Federation, a consortium of over 70 members including Bitcoin companies and exchanges. The project represents a close collaboration between NexBridge, Blockstream (led by Dr. Adam Back), and Bitfinex Securities — combining expertise in digital asset issuance, Bitcoin infrastructure, and regulated exchange operations.",
+        "democratizingP1": "USTBL aims to address the accessibility and cost barriers that have traditionally limited participation in Treasury markets. By reducing intermediaries and associated fees through blockchain-based settlement, the product works to democratize access to stable, regulated digital assets for a broader range of eligible investors."
+      }
+    },
+    "ustblRidUpdate2025": {
+      "badge": "Regulatory Update",
+      "title": "USTBL RID Update — September 2025",
+      "date": "September 11, 2025",
+      "sections": {
+        "keyChanges": "Key Changes",
+        "yieldAndIssuer": "Yield and Issuer Updates",
+        "decimalExpansion": "Technical Enhancement: Decimal Expansion",
+        "additionalUpdates": "Additional Updates"
+      },
+      "content": {
+        "intro": "NexBridge has published an updated Relevant Information Document (RID) for USTBL, following its quarterly and semi-annual update cycle as reviewed by the National Commission of Digital Assets (CNAD). This update reflects several important changes to the token's structure, documentation, and technical capabilities.",
+        "yieldP1": "The updated RID includes a revised yield to maturity for the underlying investment, reflecting current market conditions. Additionally, the issuer description has been enhanced to accurately reflect NexBridge's CNAD registration as both a licensed digital asset issuer and a Digital Assets Service Provider (DASP).",
+        "decimalP1": "The most significant update in this release is the increase in decimal support from 0 to 6 decimal places. This technical enhancement enables fractional transfers of USTBL tokens, substantially improving operational efficiency and preparing the ground for new use cases within the ecosystem.",
+        "decimalP2": "Implementing this change requires a token migration process: existing tokens will be burned and replaced with new tokens supporting the expanded decimal precision. Bitfinex Securities, which currently holds 100% of issued tokens, will coordinate the migration process. The migration is scheduled for the end of September 2025.",
+        "decimalP3": "It is important to note that this migration will not affect the nominal value, pricing, or token holder rights associated with USTBL. The change is purely technical in nature and enhances the token's functionality without altering its economic characteristics.",
+        "additionalP1": "Audited financial statements have been added to the documentation, reinforcing NexBridge's commitment to transparency. The Terms and Conditions have also been updated to provide clarified token holder rights, ensuring all participants have clear and comprehensive information about their positions.",
+        "closing": "The updated RID is publicly available at nexbridge.io/en/issuances and ustbl.io, where an archive of previous versions is also maintained for reference."
+      }
+    }
+  }
+}

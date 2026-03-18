@@ -1,0 +1,44 @@
+# Next.js
+.next/
+out/
+
+# Dependencies
+node_modules/
+
+# Vercel
+.vercel
+
+# OTC app
+otc-app/node_modules/
+
+# Build output
+/otc-uat/
+/dist/
+
+# Misc
+.DS_Store
+.backup
+
+# Legacy generated HTML (from build-i18n.js) - keep until migration verified
+/index.html
+/about.html
+/contact.html
+/ecosystem.html
+/explore.html
+/faq.html
+/glossary.html
+/insights.html
+/issuances.html
+/legal-framework.html
+/tutorials.html
+/insights/
+/es/
+/fr/
+/it/
+/pt/
+
+# Legacy build scripts
+extract-partials.js
+
+# Environment
+.env*.local

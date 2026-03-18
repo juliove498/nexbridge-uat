@@ -1,0 +1,164 @@
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+        .navbar.scrolled { top: 8px; }
+        /* Mobile nav */
+        /* ===== HERO ===== */
+        .page-hero {
+            padding: 140px 0 60px;
+            text-align: center;
+            position: relative;
+        }
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--border), transparent);
+        }
+        .hero-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            background: var(--orange-subtle);
+            border: 1px solid rgba(232, 100, 44, 0.15);
+            border-radius: var(--radius-full);
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--orange);
+            margin-bottom: 24px;
+            letter-spacing: 0.5px;
+        }
+        .hero-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 16px;
+        }
+        .hero-subtitle {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        /* ===== GLOSSARY SPECIFIC ===== */
+        .glossary-section {
+            padding: 60px 0 100px;
+        }
+        .glossary-container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        /* Alphabet Jump Nav */
+        .alpha-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 48px;
+        }
+        .alpha-nav a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: var(--radius-md);
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+        .alpha-nav a:hover,
+        .alpha-nav a.active {
+            background: var(--orange-subtle);
+            border-color: rgba(232, 100, 44, 0.3);
+            color: var(--orange);
+            box-shadow: 0 0 20px rgba(232, 100, 44, 0.1);
+        }
+        .alpha-nav a.disabled {
+            opacity: 0.25;
+            pointer-events: none;
+        }
+        /* Letter Section */
+        .letter-section {
+            margin-bottom: 48px;
+        }
+        .letter-header {
+            position: sticky;
+            top: 80px;
+            z-index: 10;
+            padding: 12px 0;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--border);
+            background: var(--bg-dark);
+        }
+        .letter-header span {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            background: var(--gradient-orange);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        /* Term Card */
+        .term-card {
+            padding: 20px 24px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            margin-bottom: 12px;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .term-card:hover {
+            border-color: rgba(232, 100, 44, 0.2);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(232, 100, 44, 0.06);
+            transform: translateY(-2px);
+        }
+        .term-name {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .term-abbr {
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: var(--radius-full);
+            background: var(--orange-subtle);
+            border: 1px solid rgba(232, 100, 44, 0.15);
+            color: var(--orange);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .term-definition {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        /* ===== SCROLL REVEAL ===== */
+        @media (max-width: 768px) {
+            .alpha-nav a {
+                width: 36px;
+                height: 36px;
+                font-size: 13px;
+            }
+            .letter-header span {
+                font-size: 1.6rem;
+            }
+            .term-card {
+                padding: 16px 18px;
+            }
+        }
