@@ -1,45 +1,45 @@
-import { getTranslations } from 'next-intl/server'
-import type { Metadata } from 'next'
-import { Link } from '@/i18n/navigation'
-import ScrollReveal from '@/components/ScrollReveal'
+import { getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
+import { Link } from "@/i18n/navigation";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations('TutorialsPage')
+  const t = await getTranslations("TutorialsPage");
   return {
-    title: t('meta.title'),
-    description: t('meta.description'),
+    title: t("meta.title"),
+    description: t("meta.description"),
     openGraph: {
-      title: t('meta.title'),
-      description: t('meta.description'),
-      images: ['https://nexbridge.finance/nexbridge-og.png'],
-      url: 'https://nexbridge.finance/tutorials',
-      type: 'website',
+      title: t("meta.title"),
+      description: t("meta.description"),
+      images: ["https://nexbridge.finance/nexbridge-og.png"],
+      url: "https://nexbridge.finance/tutorials",
+      type: "website",
     },
-    twitter: { card: 'summary_large_image' },
-    alternates: { canonical: 'https://nexbridge.finance/tutorials' },
-  }
+    twitter: { card: "summary_large_image" },
+    alternates: { canonical: "https://nexbridge.finance/tutorials" },
+  };
 }
 
 const TUTORIALS = [
   {
-    key: 'whitelistWallet' as const,
-    badgeKey: 'gettingStarted' as const,
-    videoId: 'TpWleIr307E',
+    key: "whitelistWallet" as const,
+    badgeKey: "gettingStarted" as const,
+    videoId: "TpWleIr307E",
   },
   {
-    key: 'sendIssuances' as const,
-    badgeKey: 'transfers' as const,
-    videoId: 'DrBL0RUenNk',
+    key: "sendIssuances" as const,
+    badgeKey: "transfers" as const,
+    videoId: "DrBL0RUenNk",
   },
   {
-    key: 'importWallet' as const,
-    badgeKey: 'walletSetup' as const,
-    videoId: 'GbCF1iBxkuA',
+    key: "importWallet" as const,
+    badgeKey: "walletSetup" as const,
+    videoId: "GbCF1iBxkuA",
   },
-]
+];
 
 export default async function TutorialsPage() {
-  const t = await getTranslations('TutorialsPage')
+  const t = await getTranslations("TutorialsPage");
 
   return (
     <main>
@@ -50,13 +50,18 @@ export default async function TutorialsPage() {
         <div className="container">
           <div className="reveal">
             <div className="inline-flex items-center gap-2 py-1.5 px-4 bg-orange-subtle border border-orange/15 rounded-full text-[13px] font-semibold text-orange mb-6 tracking-wide">
-              {t('hero.label')}
+              {t("hero.label")}
             </div>
             <h1 className="font-display text-[clamp(2rem,5vw,3rem)] sm:text-[1.6rem] font-extrabold leading-tight mb-4">
-              {t.rich('hero.title', { gradient: (chunks) => <span className="gradient-text">{chunks}</span>, br: () => <br /> })}
+              {t.rich("hero.title", {
+                gradient: (chunks) => (
+                  <span className="gradient-text">{chunks}</span>
+                ),
+                br: () => <br />,
+              })}
             </h1>
             <p className="text-[1.05rem] sm:text-[0.95rem] text-text-secondary max-w-160 mx-auto leading-relaxed">
-              {t('hero.subtitle')}
+              {t("hero.subtitle")}
             </p>
           </div>
         </div>
@@ -98,19 +103,37 @@ export default async function TutorialsPage() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 text-text-tertiary no-underline text-[13px] font-medium transition-colors hover:text-orange [&_svg]:w-4 [&_svg]:h-4"
                     >
-                      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        strokeWidth="1.5"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"
+                        />
                       </svg>
-                      {t('links.helpCenter')}
+                      {t("links.helpCenter")}
                     </a>
                     <Link
                       href="/contact"
                       className="inline-flex items-center gap-2 text-text-tertiary no-underline text-[13px] font-medium transition-colors hover:text-orange [&_svg]:w-4 [&_svg]:h-4"
                     >
-                      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        strokeWidth="1.5"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                        />
                       </svg>
-                      {t('links.contactUs')}
+                      {t("links.contactUs")}
                     </Link>
                   </div>
                 </div>
@@ -130,9 +153,11 @@ export default async function TutorialsPage() {
                 'radial-gradient(ellipse 60% 50% at 50% 50%, rgba(232,100,44,0.1), transparent), linear-gradient(to bottom, rgba(5,5,5,0.7) 0%, rgba(5,5,5,0.5) 40%, rgba(5,5,5,0.6) 100%), url("/cta-bg.jpg") center 60%/cover no-repeat',
             }}
           >
-            <h2 className="font-display text-2xl font-bold mb-2">{t('cta.title')}</h2>
+            <h2 className="font-display text-2xl font-bold mb-2">
+              {t("cta.title")}
+            </h2>
             <p className="text-text-secondary text-[0.95rem] max-w-120 mx-auto mb-7 leading-relaxed">
-              {t('cta.desc')}
+              {t("cta.desc")}
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap [&_a]:w-full [&_a]:justify-center sm:[&_a]:w-auto">
               <a
@@ -141,18 +166,18 @@ export default async function TutorialsPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 py-3.5 px-8 bg-linear-to-br from-orange to-orange-light text-white no-underline rounded-full font-semibold text-[0.95rem] transition-all duration-300 border-0 cursor-pointer hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(232,100,44,0.25)]"
               >
-                {t('cta.ctaPrimary')}
+                {t("cta.ctaPrimary")}
               </a>
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 py-3.5 px-8 bg-white/4 border border-white/6 text-text-primary no-underline rounded-full font-semibold text-[0.95rem] transition-all duration-300 hover:bg-white/8 hover:border-white/12"
               >
-                {t('cta.ctaSecondary')}
+                {t("cta.ctaSecondary")}
               </Link>
             </div>
           </div>
         </div>
       </section>
     </main>
-  )
+  );
 }

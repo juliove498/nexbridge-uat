@@ -1,44 +1,51 @@
-import { getTranslations } from 'next-intl/server'
-import type { Metadata } from 'next'
-import ScrollReveal from '@/components/ScrollReveal'
+import { getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
+import ScrollReveal from "@/components/ScrollReveal";
 
 type Props = {
-  params: Promise<{ locale: string }>
-}
+  params: Promise<{ locale: string }>;
+};
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'AboutPage' })
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "AboutPage" });
   return {
-    title: t('meta.title'),
-    description: t('meta.description'),
+    title: t("meta.title"),
+    description: t("meta.description"),
     openGraph: {
-      title: t('meta.title'),
-      description: t('meta.description'),
-      url: 'https://nexbridge.finance/about',
-      type: 'website',
-      images: ['https://nexbridge.finance/nexbridge-og.png'],
+      title: t("meta.title"),
+      description: t("meta.description"),
+      url: "https://nexbridge.finance/about",
+      type: "website",
+      images: ["https://nexbridge.finance/nexbridge-og.png"],
     },
     twitter: {
-      card: 'summary_large_image',
+      card: "summary_large_image",
     },
     alternates: {
-      canonical: 'https://nexbridge.finance/about',
+      canonical: "https://nexbridge.finance/about",
     },
-  }
+  };
 }
 
-const TIMELINE_KEYS = ['founded', 'purpose', 'ustblLaunch', 'whatsNext'] as const
+const TIMELINE_KEYS = [
+  "founded",
+  "purpose",
+  "ustblLaunch",
+  "whatsNext",
+] as const;
 
-const LICENSE_KEYS = ['issuer', 'dasp', 'vasp', 'lei'] as const
+const LICENSE_KEYS = ["issuer", "dasp", "vasp", "lei"] as const;
 
 const richText = {
-  gradient: (chunks: React.ReactNode) => <span className="gradient-text">{chunks}</span>,
+  gradient: (chunks: React.ReactNode) => (
+    <span className="gradient-text">{chunks}</span>
+  ),
   br: () => <br />,
-}
+};
 
 export default async function AboutPage() {
-  const t = await getTranslations('AboutPage')
+  const t = await getTranslations("AboutPage");
 
   return (
     <main>
@@ -49,22 +56,23 @@ export default async function AboutPage() {
         <div
           className="absolute bottom-0 left-0 right-0 h-px"
           style={{
-            background: 'linear-gradient(90deg, transparent, var(--border), transparent)',
+            background:
+              "linear-gradient(90deg, transparent, var(--border), transparent)",
           }}
         />
         <div className="container">
           <div className="reveal">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-orange/15 bg-orange-subtle px-4 py-1.5 font-semibold tracking-[0.5px] text-orange text-[13px]">
-              {t('hero.label')}
+              {t("hero.label")}
             </div>
             <h1
               className="font-display mb-4 font-extrabold leading-[1.15]"
-              style={{ fontSize: 'clamp(2rem, 5vw, 3rem)' }}
+              style={{ fontSize: "clamp(2rem, 5vw, 3rem)" }}
             >
-              {t.rich('hero.title', richText)}
+              {t.rich("hero.title", richText)}
             </h1>
             <p className="mx-auto max-w-150 text-[1.05rem] leading-[1.7] text-text-secondary">
-              {t('hero.subtitle')}
+              {t("hero.subtitle")}
             </p>
           </div>
         </div>
@@ -78,11 +86,19 @@ export default async function AboutPage() {
               <div
                 className="absolute top-0 left-0 right-0 h-0.5"
                 style={{
-                  background: 'linear-gradient(90deg, transparent, var(--orange), transparent)',
+                  background:
+                    "linear-gradient(90deg, transparent, var(--orange), transparent)",
                 }}
               />
               <div className="mb-5 flex h-12 w-12 shrink-0 items-center justify-center rounded-[14px] border border-orange/15 bg-orange-subtle text-orange">
-                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -90,18 +106,30 @@ export default async function AboutPage() {
                   />
                 </svg>
               </div>
-              <h3 className="font-display mb-3 text-[1.2rem] font-bold">{t('mission.title')}</h3>
-              <p className="text-[0.95rem] leading-[1.7] text-text-secondary">{t('mission.desc')}</p>
+              <h3 className="font-display mb-3 text-[1.2rem] font-bold">
+                {t("mission.title")}
+              </h3>
+              <p className="text-[0.95rem] leading-[1.7] text-text-secondary">
+                {t("mission.desc")}
+              </p>
             </div>
             <div className="reveal relative overflow-hidden rounded-xl border border-white/6 bg-white/2 p-7 md:p-10">
               <div
                 className="absolute top-0 left-0 right-0 h-0.5"
                 style={{
-                  background: 'linear-gradient(90deg, transparent, #60A5FA, transparent)',
+                  background:
+                    "linear-gradient(90deg, transparent, #60A5FA, transparent)",
                 }}
               />
               <div className="mb-5 flex h-12 w-12 shrink-0 items-center justify-center rounded-[14px] border border-blue-400/15 bg-blue-400/10 text-blue-400">
-                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+                <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -114,8 +142,12 @@ export default async function AboutPage() {
                   />
                 </svg>
               </div>
-              <h3 className="font-display mb-3 text-[1.2rem] font-bold">{t('vision.title')}</h3>
-              <p className="text-[0.95rem] leading-[1.7] text-text-secondary">{t('vision.desc')}</p>
+              <h3 className="font-display mb-3 text-[1.2rem] font-bold">
+                {t("vision.title")}
+              </h3>
+              <p className="text-[0.95rem] leading-[1.7] text-text-secondary">
+                {t("vision.desc")}
+              </p>
             </div>
           </div>
         </div>
@@ -125,13 +157,14 @@ export default async function AboutPage() {
       <section className="border-t border-white/6 py-20">
         <div className="container">
           <h2 className="reveal font-display mb-12 text-center text-[1.3rem] font-bold">
-            {t.rich('story.title', richText)}
+            {t.rich("story.title", richText)}
           </h2>
           <div className="relative mx-auto max-w-175">
             <div
               className="absolute left-6 top-0 bottom-0 w-0.5"
               style={{
-                background: 'linear-gradient(180deg, var(--orange), rgba(232,100,44,0.1))',
+                background:
+                  "linear-gradient(180deg, var(--orange), rgba(232,100,44,0.1))",
               }}
             />
             {TIMELINE_KEYS.map((key) => (
@@ -157,23 +190,26 @@ export default async function AboutPage() {
           <div className="reveal mb-12 text-center">
             <h2
               className="font-display mb-3 font-extrabold"
-              style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)' }}
+              style={{ fontSize: "clamp(1.5rem, 3vw, 2rem)" }}
             >
-              {t.rich('licenses.title', richText)}
+              {t.rich("licenses.title", richText)}
             </h2>
             <p className="mx-auto max-w-125 text-[0.95rem] text-text-secondary">
-              {t('licenses.subtitle')}
+              {t("licenses.subtitle")}
             </p>
           </div>
           <div className="mt-10 grid grid-cols-2 gap-5 lg:grid-cols-4">
             {LICENSE_KEYS.map((key) => (
-              <div key={key} className="reveal rounded-lg border border-white/6 bg-white/2 px-5 py-7 text-center">
+              <div
+                key={key}
+                className="reveal rounded-lg border border-white/6 bg-white/2 px-5 py-7 text-center"
+              >
                 <div className="mb-2 text-[11px] font-semibold uppercase tracking-[0.5px] text-text-tertiary">
                   {t(`licenses.cards.${key}.label` as never)}
                 </div>
                 <div
                   className="font-display mb-1 font-bold text-orange text-[1.1rem]"
-                  style={key === 'lei' ? { fontSize: '0.75rem' } : undefined}
+                  style={key === "lei" ? { fontSize: "0.75rem" } : undefined}
                 >
                   {t(`licenses.cards.${key}.value` as never)}
                 </div>
@@ -186,5 +222,5 @@ export default async function AboutPage() {
         </div>
       </section>
     </main>
-  )
+  );
 }
