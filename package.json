@@ -6,18 +6,21 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "build:otc": "cd otc-app && npm install && npm run build"
+    "build:otc": "cd otc-app && npm install && npm run build",
+    "build:admin": "echo 'admin is Next.js — built with main app'"
   },
   "dependencies": {
     "@base-ui/react": "^1.2.0",
     "@locator/babel-jsx": "^0.5.1",
     "@tailwindcss/postcss": "^4.2.1",
+    "@vercel/node": "^5.6.16",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.577.0",
     "next": "^15.1.0",
     "next-intl": "^4.1.0",
     "postcss": "^8.5.8",
+    "postgres": "^3.4.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "shadcn": "^4.0.5",

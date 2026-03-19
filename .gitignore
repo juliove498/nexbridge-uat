@@ -42,3 +42,10 @@ extract-partials.js
 
 # Environment
 .env*.local
+.env*
+
+# Scripts
+/scripts
+
+# Migration db
+/migrations

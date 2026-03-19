@@ -2,104 +2,188 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/google1614c184bc22a207.html", "destination": "/google1614c184bc22a207.html" },
-    { "source": "/otc-uat/(.*)", "destination": "/otc-uat/index.html" }
+    {
+      "source": "/google1614c184bc22a207.html",
+      "destination": "/google1614c184bc22a207.html"
+    },
+    {
+      "source": "/otc-uat/(.*)",
+      "destination": "/otc-uat/index.html"
+    }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options",  "value": "nosniff" },
-        { "key": "X-Frame-Options",          "value": "DENY" },
-        { "key": "X-XSS-Protection",         "value": "0" },
-        { "key": "Referrer-Policy",          "value": "strict-origin-when-cross-origin" },
-        { "key": "Permissions-Policy",       "value": "camera=(), microphone=(), geolocation=()" },
-        { "key": "Strict-Transport-Security","value": "max-age=63072000; includeSubDomains; preload" },
-        { "key": "X-Powered-By",             "value": "" },
-        { "key": "Server",                   "value": "" },
-        { "key": "Cache-Control",            "value": "public, max-age=0, must-revalidate" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "0"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "X-Powered-By",
+          "value": ""
+        },
+        {
+          "key": "Server",
+          "value": ""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
       ]
     },
     {
       "source": "/api/admin/(.*)",
       "headers": [
-        { "key": "Content-Security-Policy",  "value": "default-src 'none'" },
-        { "key": "Cache-Control",            "value": "no-store" },
-        { "key": "X-Content-Type-Options",   "value": "nosniff" }
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'none'"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
       ]
     },
     {
       "source": "/otc-uat/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://apitest.nexbridge.io https://api.nexbridge.io https://api.nexbridge.finance https://*.amazonaws.com https://*.amazoncognito.com; img-src 'self' data:; frame-ancestors 'none';" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://apitest.nexbridge.io https://api.nexbridge.io https://api.nexbridge.finance https://*.amazonaws.com https://*.amazoncognito.com; img-src 'self' data:; frame-ancestors 'none';"
+        }
       ]
     },
     {
       "source": "/en/(.*)",
       "headers": [
-        { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://api.nexbridge.io https://api.nexbridge.finance; img-src 'self' data: https:; frame-ancestors 'none';" }
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://api.nexbridge.io https://api.nexbridge.finance; img-src 'self' data: https:; frame-ancestors 'none';"
+        }
       ]
     },
     {
       "source": "/es/(.*)",
       "headers": [
-        { "key": "Content-Language", "value": "es" }
+        {
+          "key": "Content-Language",
+          "value": "es"
+        }
       ]
     },
     {
       "source": "/it/(.*)",
       "headers": [
-        { "key": "Content-Language", "value": "it" }
+        {
+          "key": "Content-Language",
+          "value": "it"
+        }
       ]
     },
     {
       "source": "/pt/(.*)",
       "headers": [
-        { "key": "Content-Language", "value": "pt" }
+        {
+          "key": "Content-Language",
+          "value": "pt"
+        }
       ]
     },
     {
       "source": "/fr/(.*)",
       "headers": [
-        { "key": "Content-Language", "value": "fr" }
+        {
+          "key": "Content-Language",
+          "value": "fr"
+        }
       ]
     },
     {
       "source": "/issuance-logos/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/partners-logos/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/insights/(.*).jpg",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/team-photos/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/css/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/js/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     }
   ]
