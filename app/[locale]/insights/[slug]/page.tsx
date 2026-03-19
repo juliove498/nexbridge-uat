@@ -1,4 +1,3 @@
-import { useTranslations } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { Link } from '@/i18n/navigation'
@@ -288,17 +287,20 @@ export default async function InsightArticlePage({
     notFound()
   }
 
-  return <ArticleView slug={validSlug} translationKey={key} />
+  const t = await getTranslations('InsightArticles')
+
+  return <ArticleView slug={validSlug} translationKey={key} t={t} />
 }
 
 function ArticleView({
   slug,
   translationKey,
+  t,
 }: {
   slug: Slug
   translationKey: string
+  t: Awaited<ReturnType<typeof getTranslations<'InsightArticles'>>>
 }) {
-  const t = useTranslations('InsightArticles')
   const heroImage = HERO_IMAGES[slug]
   const ArticleBody = BODY_RENDERERS[slug]
 

@@ -1,4 +1,3 @@
-import { useTranslations } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import ScrollReveal from '@/components/ScrollReveal'
@@ -20,8 +19,8 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 }
 
-export default function LegalFrameworkPage() {
-  const t = useTranslations('LegalFrameworkPage')
+export default async function LegalFrameworkPage() {
+  const t = await getTranslations('LegalFrameworkPage')
 
   return (
     <main>

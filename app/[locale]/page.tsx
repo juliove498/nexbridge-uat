@@ -1,4 +1,3 @@
-import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
@@ -38,8 +37,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function HomePage() {
-  const t = useTranslations("HomePage");
+export default async function HomePage() {
+  const t = await getTranslations("HomePage");
   const translate = (k: string) => t(k as never);
   const translateRich = (k: string, v: Record<string, unknown>): ReactNode =>
     (t.rich as (key: string, values: Record<string, unknown>) => ReactNode)(

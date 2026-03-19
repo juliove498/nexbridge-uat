@@ -1,4 +1,3 @@
-import { useTranslations } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import ScrollReveal from '@/components/ScrollReveal'
@@ -29,8 +28,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default function ContactPage() {
-  const t = useTranslations('ContactPage')
+export default async function ContactPage() {
+  const t = await getTranslations('ContactPage')
 
   return (
     <main>

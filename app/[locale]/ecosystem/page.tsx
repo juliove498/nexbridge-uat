@@ -1,4 +1,3 @@
-import { useTranslations } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { Link } from '@/i18n/navigation'
@@ -31,8 +30,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default function EcosystemPage() {
-  const t = useTranslations('EcosystemPage')
+export default async function EcosystemPage() {
+  const t = await getTranslations('EcosystemPage')
 
   return (
     <main>

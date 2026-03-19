@@ -1,4 +1,3 @@
-import { useTranslations } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import ScrollReveal from '@/components/ScrollReveal'
@@ -38,8 +37,8 @@ const richText = {
   br: () => <br />,
 }
 
-export default function AboutPage() {
-  const t = useTranslations('AboutPage')
+export default async function AboutPage() {
+  const t = await getTranslations('AboutPage')
 
   return (
     <main>

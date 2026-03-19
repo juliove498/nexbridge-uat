@@ -1,4 +1,3 @@
-import { useTranslations } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { Link } from '@/i18n/navigation'
@@ -39,8 +38,8 @@ const TUTORIALS = [
   },
 ]
 
-export default function TutorialsPage() {
-  const t = useTranslations('TutorialsPage')
+export default async function TutorialsPage() {
+  const t = await getTranslations('TutorialsPage')
 
   return (
     <main>

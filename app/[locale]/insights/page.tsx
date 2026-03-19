@@ -1,4 +1,3 @@
-import { useTranslations } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { Link } from '@/i18n/navigation'
@@ -67,8 +66,8 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 }
 
-export default function InsightsPage() {
-  const t = useTranslations('InsightsPage')
+export default async function InsightsPage() {
+  const t = await getTranslations('InsightsPage')
 
   return (
     <main>
