@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation";
 import ScrollReveal from "@/components/ScrollReveal";
 import { getArticleBySlug, getAllSlugs } from "@/lib/articles";
 import { notFound } from "next/navigation";
-import DOMPurify from "isomorphic-dompurify";
+import sanitizeHtml from "sanitize-html";
 
 export const dynamic = "force-dynamic";
 
@@ -83,7 +83,14 @@ export default async function InsightArticlePage({ params }: Props) {
 
   if (!article) notFound();
 
-  const sanitizedBody = DOMPurify.sanitize(article.body_html ?? "");
+  const sanitizedBody = sanitizeHtml(article.body_html ?? "", {
+    allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img", "h1", "h2", "h3", "h4", "cite"]),
+    allowedAttributes: {
+      ...sanitizeHtml.defaults.allowedAttributes,
+      img: ["src", "alt", "width", "height", "loading"],
+      a: ["href", "target", "rel"],
+    },
+  });
 
   return (
     <main>
