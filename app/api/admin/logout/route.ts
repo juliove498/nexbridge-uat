@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { makeCors, getTokenFromNextReq, clearCookieValue } from '../_lib'
+import { makeCors, getTokenFromNextReq, clearCookieValue } from '@/lib/admin-api'
 import { revokeSessionByToken } from '@/api/lib/sessions'
 
 const METHODS = ['POST', 'OPTIONS']

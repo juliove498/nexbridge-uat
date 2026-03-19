@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
-import { makeCors, authCookieValue, getClientIpFromNextReq } from '../_lib'
+import { makeCors, authCookieValue, getClientIpFromNextReq } from '@/lib/admin-api'
 import { isRateLimited, recordFailedAttempt, recordSuccessfulLogin } from '@/api/lib/rate-limit'
 import { verifyPassword } from '@/api/lib/password'
 import { createSession } from '@/api/lib/sessions'

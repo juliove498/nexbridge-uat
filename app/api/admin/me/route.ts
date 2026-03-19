@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { makeCors, getTokenFromNextReq } from '../_lib'
+import { makeCors, getTokenFromNextReq } from '@/lib/admin-api'
 import { validateSession } from '@/api/lib/sessions'
 
 const METHODS = ['GET', 'OPTIONS']
