@@ -8,6 +8,10 @@ function isAdminRoute(pathname: string) {
   return pathname.startsWith('/admin') || pathname.startsWith('/api/admin')
 }
 
+function isApiRoute(pathname: string) {
+  return pathname.startsWith('/api/')
+}
+
 function checkBasicAuth(request: NextRequest): NextResponse | null {
   const authHeader = request.headers.get('authorization')
   const AUTH_USER = process.env.BASIC_AUTH_USER
@@ -30,9 +34,16 @@ function checkBasicAuth(request: NextRequest): NextResponse | null {
 }
 
 export default function middleware(request: NextRequest) {
-  if (isAdminRoute(request.nextUrl.pathname)) {
+  const { pathname } = request.nextUrl
+
+  if (isAdminRoute(pathname)) {
     const authResponse = checkBasicAuth(request)
     if (authResponse) return authResponse
+    return NextResponse.next()
+  }
+
+  // Let all non-admin API routes pass through without i18n processing
+  if (isApiRoute(pathname)) {
     return NextResponse.next()
   }
 
