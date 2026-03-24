@@ -30,10 +30,25 @@ export default function HeroSection() {
           <div className="hero-mesh-blob" />
         </div>
         <div className="hero-grid" />
-        <div className="container flex items-center justify-between w-full">
+        <div className="container relative flex items-center justify-between w-full -top-22 sm:top-0">
           <div className="relative z-2 max-w-200">
+            {/* Mobile: plain text line, no pill */}
             <div
-              className="inline-flex items-center gap-2 bg-[rgba(232,100,44,0.06)] border border-[rgba(232,100,44,0.15)] rounded-full py-1.5 pl-1.5 pr-4 text-[13px] font-medium text-orange-light mb-8 opacity-0 -translate-x-[30px] backdrop-blur-md"
+              className="md:hidden flex items-start gap-2.5 text-[12px] font-medium text-orange-light mb-6 opacity-0 -translate-x-[30px] leading-[1.5] pl-4"
+              style={{
+                animation:
+                  "heroBadgeIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards",
+              }}
+            >
+              <span
+                className="mt-[5px] shrink-0 w-1.5 h-1.5 bg-gray-600  sm:bg-orange rounded-full shadow-[0_0_10px_rgba(232,100,44,0.4)]"
+                style={{ animation: "pulse 2s ease-in-out infinite" }}
+              />
+              <span className="text-text-tertiary">{t("hero.badge")}</span>
+            </div>
+            {/* Desktop: pill badge */}
+            <div
+              className="hidden md:inline-flex items-center gap-2 bg-[rgba(232,100,44,0.06)] border border-[rgba(232,100,44,0.15)] rounded-full py-1.5 pl-1.5 pr-4 text-[13px] font-medium text-orange-light mb-8 opacity-0 -translate-x-[30px] backdrop-blur-md"
               style={{
                 animation:
                   "heroBadgeIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.1s forwards",
