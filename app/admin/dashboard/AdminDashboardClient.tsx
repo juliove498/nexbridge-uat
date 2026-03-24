@@ -10,6 +10,10 @@ const ArticleEditor = dynamic(
   () => import("@/components/admin/ArticleEditor"),
   { ssr: false },
 );
+const TranslationsEditor = dynamic(
+  () => import("@/components/admin/TranslationsEditor"),
+  { ssr: false },
+);
 
 interface User {
   email: string;
@@ -18,7 +22,7 @@ interface User {
   sessionId: number;
 }
 
-type Section = "overview" | "insights";
+type Section = "overview" | "insights" | "content";
 type InsightsView = "list" | "create" | "edit";
 
 interface EditingArticle {
@@ -83,6 +87,24 @@ const NAV_ITEMS: { key: Section; label: string; icon: React.ReactNode }[] = [
         <line x1="16" y1="13" x2="8" y2="13" />
         <line x1="16" y1="17" x2="8" y2="17" />
         <line x1="10" y1="9" x2="8" y2="9" />
+      </svg>
+    ),
+  },
+  {
+    key: "content",
+    label: "Content",
+    icon: (
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+      >
+        <circle cx="12" cy="12" r="10" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
       </svg>
     ),
   },
@@ -220,7 +242,7 @@ export default function AdminDashboardClient({ user }: { user: User }) {
         </aside>
 
         {/* Main content */}
-        <main className="flex-1 p-6 overflow-y-auto">
+        <main className={`flex-1 overflow-y-auto ${section === "content" ? "p-0 flex flex-col" : "p-6"}`}>
           {section === "overview" && (
             <div className="max-w-md mx-auto">
               <div className="bg-card border border-border rounded-2xl p-8 shadow-2xl text-center relative overflow-hidden">
@@ -328,6 +350,12 @@ export default function AdminDashboardClient({ user }: { user: User }) {
                 saving={saving}
               />
             )}
+
+          {section === "content" && (
+            <div className="flex-1 flex min-h-0 overflow-hidden">
+              <TranslationsEditor />
+            </div>
+          )}
         </main>
       </div>
     </div>
