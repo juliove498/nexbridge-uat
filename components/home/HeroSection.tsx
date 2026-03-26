@@ -18,7 +18,7 @@ export default function HeroSection() {
     <>
       <HomeEffects />
       <section
-        className="hero min-h-screen flex items-center relative pt-18 overflow-hidden"
+        className="hero min-h-screen md:h-screen md:min-h-212 flex items-center relative pt-18 overflow-hidden"
         style={{
           background:
             "linear-gradient(to right, rgba(5,5,5,0.97) 0%, rgba(5,5,5,0.88) 30%, rgba(5,5,5,0.65) 60%, rgba(5,5,5,0.45) 100%), url('/hero-bg.jpg') center/cover no-repeat",

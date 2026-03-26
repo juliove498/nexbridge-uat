@@ -162,7 +162,7 @@
   },
   "CookieConsent": {
     "title": "Utilizamos cookies",
-    "body": "Ao aceitar todos os cookies, você consente o uso desta tecnologia para melhorar sua experiência e para fins de análise e marketing. Você pode visitar nossas <a href=\"#\" id=\"nbCookieSettingsLink\">Configurações de Cookies</a> e nossa <a href=\"/pt/legal-framework\">Política de Privacidade</a> para mais informações.",
+    "body": "Ao aceitar todos os cookies, você consente o uso desta tecnologia para melhorar sua experiência e para fins de análise e marketing. Você pode visitar nossas <settingsLink>Configurações de Cookies</settingsLink> e nossa <privacyLink>Política de Privacidade</privacyLink> para mais informações.",
     "allowNecessary": "Apenas Necessários",
     "allowAll": "Aceitar Todos",
     "settingsTitle": "Configurações de Cookies",
