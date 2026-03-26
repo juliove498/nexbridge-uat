@@ -24,7 +24,7 @@ const TUTORIALS = [
   {
     key: "whitelistWallet" as const,
     badgeKey: "gettingStarted" as const,
-    videoId: "TpWleIr307E",
+    videoId: "PdX_Tzcy_6U",
   },
   {
     key: "sendIssuances" as const,

@@ -777,7 +777,8 @@
       "title": "Insights & <gradient>Official Updates</gradient>",
       "subtitle": "Stay informed on the latest developments in digital asset regulation, product announcements, and institutional-grade digital assets from NexBridge."
     },
-    "readMore": "Read More"
+    "readMore": "Read More",
+    "backToInsights": "Back to Insights"
   },
   "IssuancesPage": {
     "meta": {

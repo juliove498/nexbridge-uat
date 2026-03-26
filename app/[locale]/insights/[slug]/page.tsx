@@ -4,6 +4,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { getArticleBySlug, getAllSlugs } from "@/lib/articles";
 import { notFound } from "next/navigation";
 import sanitizeHtml from "sanitize-html";
+import { getTranslations } from "next-intl/server";
 
 export const dynamic = "force-dynamic";
 
@@ -80,11 +81,19 @@ function BackArrowIcon() {
 export default async function InsightArticlePage({ params }: Props) {
   const { slug, locale } = await params;
   const article = await getArticleBySlug(slug, locale);
+  const t = await getTranslations("InsightsPage");
 
   if (!article) notFound();
 
   const sanitizedBody = sanitizeHtml(article.body_html ?? "", {
-    allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img", "h1", "h2", "h3", "h4", "cite"]),
+    allowedTags: sanitizeHtml.defaults.allowedTags.concat([
+      "img",
+      "h1",
+      "h2",
+      "h3",
+      "h4",
+      "cite",
+    ]),
     allowedAttributes: {
       ...sanitizeHtml.defaults.allowedAttributes,
       img: ["src", "alt", "width", "height", "loading"],
@@ -141,7 +150,7 @@ export default async function InsightArticlePage({ params }: Props) {
             href="/insights"
             className="inline-flex items-center gap-2 text-text-secondary no-underline text-sm font-medium py-2 transition-colors duration-200 hover:text-orange [&_svg]:transition-transform [&_svg]:duration-200 hover:[&_svg]:-translate-x-0.5"
           >
-            <BackArrowIcon /> Back to Insights
+            <BackArrowIcon /> {t("backToInsights")}
           </Link>
         </div>
       </article>
