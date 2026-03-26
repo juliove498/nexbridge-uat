@@ -116,7 +116,14 @@ export default function CookieConsent() {
         </div>
       )}
 
-      <Dialog open={settingsOpen} onOpenChange={() => {}} dismissible={false}>
+      <Dialog
+        open={settingsOpen}
+        onOpenChange={(open, details) => {
+          if (!open && details.reason !== "imperative-action") return;
+          setSettingsOpen(open);
+        }}
+        disablePointerDismissal
+      >
         <DialogContent
           className="bg-[#0a0a0a] border-white/10 text-white max-w-120 md:max-w-200 z-9999 max-h-[90dvh] overflow-y-auto"
           showCloseButton={false}
